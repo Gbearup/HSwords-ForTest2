@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高一上英文課本-第二次段考 單字複習與測驗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lesson-tabs">
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index.html'">📚 回首頁 </button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-TextBook-2.html'">📚 課本專區</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-LiveABC_10_1.html'">📚LiveABC 10月份 單字專區</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-7000-2.html'">📚核心單字專區</button>
+        </div>
+        <header>
+            <h1 id="page-title">高一上英文課本-第二次段考 單字複習與測驗</h1>  
+        </header>
+
+        <!-- 動態生成：單元切換頁籤 -->
+        <div class="lesson-tabs" id="lessonTabsContainer"></div>
+
+        <!-- 動態生成：單元內容區塊 -->
+        <div id="dynamicContentContainer"></div>
+    </div>
+
+    <!-- 載入資料與測驗引擎 -->
+    <script src="WordsData/book1_test2.js"></script>
+    <script src="quiz-engine.js"></script>
+
+    <script>
+        // =========================================================================
+        // 【動態設定區】以後只要在這裡加單元，或在 JS 加資料，HTML 永遠不用動！
+        // =========================================================================
+        const unitsConfig = [
+            // { id: 'lesson1', shortId: 'l1', name: '第1課', dataVar: 'lesson1Data' },
+            // { id: 'lesson2', shortId: 'l2', name: '第2課', dataVar: 'lesson2Data' },
+            // { id: 'lesson3', shortId: 'l3', name: '第3課', dataVar: 'lesson3Data' },
+            { id: 'lesson4', shortId: 'l4', name: '第4課', dataVar: 'lesson4Data' }
+            // 之後要加第5單元、第6單元...直接在這裡繼續加物件即可：
+            // { id: 'lesson5', shortId: 'l5', name: '第5課', dataVar: 'magazine10w5WordsData' },
+        ];
+
+        const lessonWordsMap = {
+            //   magazine10w1WordsData: magazine10w1WordsData,
+            //   magazine10w2WordsData: magazine10w2WordsData,
+            //   magazine10w3WordsData: magazine10w3WordsData,
+              lesson4Data: lesson4Data
+             // 之後要加第5週、第6週...直接在這裡繼續加物件即可：
+             // magazine10w5WordsData: magazine10w5WordsData,
+             //注意： 這裡的 magazine10w5WordsData 必須確實存在，否則可能出現 ReferenceError，導致後續程式無法執行。
+         };
+
+
+        // 讓共用引擎抓取資料
+        
+function getDataByLessonId(lessonId) {
+    if (lessonId === 'all') {
+        return typeof allData !== 'undefined' ? allData : [];
+    }
+
+    const unit = unitsConfig.find(
+        u => u.id === lessonId || u.shortId === lessonId
+    );
+
+    if (!unit) return [];
+
+    return lessonWordsMap[unit.dataVar] || [];
+}
+
+
+        // 動態渲染整個頁面結構與單字列表
+        function initDynamicApp() {
+            const tabsContainer = document.getElementById('lessonTabsContainer');
+            const contentContainer = document.getElementById('dynamicContentContainer');
+
+            let tabsHtml = '';
+            let contentsHtml = '';
+
+            unitsConfig.forEach((unit, index) => {
+                const isActiveTab = index === 0 ? 'active' : '';
+                const isActiveContent = index === 0 ? 'active' : '';
+                const sId = unit.shortId;
+
+                // 產生頂部按鈕
+                tabsHtml += `<button class="lesson-btn ${isActiveTab}" onclick="switchLesson('${unit.id}')">📚 ${unit.name}</button>`;
+
+                // 產生對應的單字列表與測驗介面（完全對齊 quiz-engine.js 所需的 ID）
+                contentsHtml += `
+                    <div id="${unit.id}-container" class="lesson-content ${isActiveContent}">
+                        <div class="nav-tabs">
+                            <button class="tab-btn active" onclick="switchTab('${sId}', 'list')">📖 單字列表</button>
+                            <button class="tab-btn" onclick="switchTab('${sId}', 'quiz')">📝 開始測驗</button>
+                        </div>
+                        <div id="${sId}-list-tab" class="tab-content active">
+                            <div class="controls">
+                                <input type="text" id="${sId}-searchInput" class="search-input" placeholder="搜尋${unit.name}單字、KK音標、中文解釋..." onkeyup="filterWords('${sId}')">
+                            </div>
+                            <div class="word-grid" id="${sId}-wordGrid"></div>
+                        </div>
+                        <div id="${sId}-quiz-tab" class="tab-content">
+                            <div class="quiz-outer-card">
+                                <div class="mode-header-title">🎯 ${unit.name}單字互動測驗</div>
+                                <div class="mode-header-desc">請選擇您想要的測驗模式與題數，點擊開始挑戰！</div>
+                                <div class="setup-panel" id="${sId}-quizSetupPanel">
+                                    <div class="setup-group">
+                                        <label>選擇測驗題型：</label>
+                                        <div class="setup-options">
+                                            <button class="setup-btn active" id="${sId}-typeChoiceBtn" onclick="setQuizType('${sId}', 'choice')">英選中 (看英選中)</button>
+                                            <button class="setup-btn" id="${sId}-typeChineseToEnglishBtn" onclick="setQuizType('${sId}', 'chineseToEnglish')">中選英 (看中選英)</button>
+                                            <button class="setup-btn" id="${sId}-typeSpellBtn" onclick="setQuizType('${sId}', 'spell')">手動拼字填空</button>
+                                        </div>
+                                    </div>
+                                    <div class="setup-group">
+                                        <label>選擇測驗題數：</label>
+                                        <div class="setup-options">
+                                            <button class="setup-btn active" id="${sId}-count10Btn" onclick="setQuizCount('${sId}', 10)">10 題</button>
+                                            <button class="setup-btn" id="${sId}-countAllBtn" onclick="setQuizCount('${sId}', 'all')">全部題數</button>
+                                        </div>
+                                    </div>
+                                    <button class="full-next-btn" onclick="startQuiz('${sId}')">🚀 開始作答</button>
+                                </div>
+                                <div id="${sId}-quizActiveArea" style="display: none;">
+                                    <div class="sticky-score-bar">
+                                        <span id="${sId}-quizProgress" style="font-weight: bold; color: #4a5568;">進度：0 / 10</span>
+                                        <span id="${sId}-quizScore" style="font-weight: bold; color: var(--btn-blue); font-size: 1.1rem;">得分：0 分</span>
+                                    </div>
+                                    <div class="quiz-inner-box">
+                                        <div class="question-label" id="${sId}-questionText">載入中...</div>
+                                        <div id="${sId}-quizAnswersArea" class="options-group"></div>
+                                        <div class="result-banner" id="${sId}-quizBanner"></div>
+                                    </div>
+                                    <button class="full-next-btn" id="${sId}-quizNextBtn" onclick="nextQuestion('${sId}')" style="display: none;">下一題 ➔</button>
+                                </div>
+                                <div id="${sId}-quizFinalResult" style="display: none; text-align: center; padding: 25px; background: #edf2f7; border-radius: 12px;">
+                                    <h2 style="margin-top: 0; color: #2d3748;">🎉 ${unit.name}測驗完成！</h2>
+                                    <p style="font-size: 1.1rem; color: #4a5568;">您的最終得分：</p>
+                                    <div id="${sId}-finalScoreDisplay" style="font-size: 3rem; font-weight: bold; color: var(--btn-blue); margin: 10px 0 20px 0;">0 / 100</div>
+                                    <div id="${sId}-wrongReviewContainer"></div>
+                                    <button class="full-next-btn" onclick="resetQuizSetup('${sId}')" style="max-width: 240px; margin: 20px auto 0 auto;">🔄 重新設定並再試一次</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // 總測驗
+            tabsHtml += `<button class="lesson-btn" onclick="switchLesson('all')">🌟 總測驗</button>`;
+            contentsHtml += `
+                <div id="all-container" class="lesson-content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" onclick="switchTab('all', 'list')">📖 全部單字總覽</button>
+                        <button class="tab-btn" onclick="switchTab('all', 'quiz')">📝 開始總測驗</button>
+                    </div>
+                    <div id="all-list-tab" class="tab-content active">
+                        <div class="controls">
+                            <input type="text" id="all-searchInput" class="search-input" placeholder="搜尋所有課程單字、片語、KK音標、中文解釋..." onkeyup="filterWords('all')">
+                        </div>
+                        <div class="word-grid" id="all-wordGrid"></div>
+                    </div>
+                    <div id="all-quiz-tab" class="tab-content">
+                        <div class="quiz-outer-card">
+                            <div class="mode-header-title">🌟 總測驗（涵蓋全部單字與片語）</div>
+                            <div class="mode-header-desc">請選擇您想要的測驗模式與題數，挑戰跨課綜合單字大考驗！</div>
+                            <div class="setup-panel" id="all-quizSetupPanel">
+                                <div class="setup-group">
+                                    <label>選擇測驗題型：</label>
+                                    <div class="setup-options">
+                                        <button class="setup-btn active" id="all-typeChoiceBtn" onclick="setQuizType('all', 'choice')">英選中 (看英選中)</button>
+                                        <button class="setup-btn" id="all-typeChineseToEnglishBtn" onclick="setQuizType('all', 'chineseToEnglish')">中選英 (看中選英)</button>
+                                        <button class="setup-btn" id="all-typeSpellBtn" onclick="setQuizType('all', 'spell')">手動拼字填空</button>
+                                    </div>
+                                </div>
+                                <div class="setup-group">
+                                    <label>選擇測驗題數：</label>
+                                    <div class="setup-options">
+                                        <button class="setup-btn active" id="all-count10Btn" onclick="setQuizCount('all', 10)">10 題</button>
+                                        <button class="setup-btn" id="all-count20Btn" onclick="setQuizCount('all', 20)">20 題</button>
+                                        <button class="setup-btn" id="all-countAllBtn" onclick="setQuizCount('all', 'all')">全部題數</button>
+                                    </div>
+                                </div>
+                                <button class="full-next-btn" onclick="startQuiz('all')">🚀 開始總測驗</button>
+                            </div>
+                            <div id="all-quizActiveArea" style="display: none;">
+                                <div class="sticky-score-bar">
+                                    <span id="all-quizProgress" style="font-weight: bold; color: #4a5568;">進度：0 / 10</span>
+                                    <span id="all-quizScore" style="font-weight: bold; color: var(--btn-blue); font-size: 1.1rem;">得分：0 分</span>
+                                </div>
+                                <div class="quiz-inner-box">
+                                    <div class="question-label" id="all-questionText">載入中...</div>
+                                    <div id="all-quizAnswersArea" class="options-group"></div>
+                                    <div class="result-banner" id="all-quizBanner"></div>
+                                </div>
+                                <button class="full-next-btn" id="all-quizNextBtn" onclick="nextQuestion('all')" style="display: none;">下一題 ➔</button>
+                            </div>
+                            <div id="all-quizFinalResult" style="display: none; text-align: center; padding: 25px; background: #edf2f7; border-radius: 12px;">
+                                <h2 style="margin-top: 0; color: #2d3748;">🎉 總測驗完成！</h2>
+                                <p style="font-size: 1.1rem; color: #4a5568;">您的最終得分：</p>
+                                <div id="all-finalScoreDisplay" style="font-size: 3rem; font-weight: bold; color: var(--btn-blue); margin: 10px 0 20px 0;">0 / 100</div>
+                                <div id="all-wrongReviewContainer"></div>
+                                <button class="full-next-btn" onclick="resetQuizSetup('all')" style="max-width: 240px; margin: 20px auto 0 auto;">🔄 重新設定並再試一次</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // 注入 DOM 
+            tabsContainer.innerHTML = tabsHtml;
+            contentContainer.innerHTML = contentsHtml;
+
+            // 確保 DOM 建立完成後，立即呼叫引擎將各單元卡片渲染進各自的網格中
+            setTimeout(() => {
+    unitsConfig.forEach(unit => {
+        const words = getDataByLessonId(unit.id);
+
+        console.log(
+            `[${unit.name}] 單字數量：`,
+            words.length,
+            words
+        );
+
+        renderWords(unit.shortId, words);
+    });
+
+    if (typeof allData !== 'undefined') {
+        console.log('[總複習] 單字數量：', allData.length);
+        renderWords('all', allData);
+    } else {
+        console.error('找不到 allData，請檢查資料來源。');
+    }
+}, 50);
+        }
+
+        // 頁面載入時觸發動態生成
+        window.onload = initDynamicApp;
+    </script>
+</body>
+</html>
