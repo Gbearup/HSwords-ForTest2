@@ -108,6 +108,7 @@ function renderWords(lessonId, words) {
                 <div class="word-header">
                     <div>
                         <span class="word-title">${item.vocab}</span>
+                        ${item.pos ? `<span style="font-size:0.85rem; color:var(--btn-blue); margin-left:6px; font-weight:600;">${item.pos}</span>` : ''}
                         <span style="font-size:0.85rem; color:var(--text-sub); margin-left:6px;">${item.kk || ''}</span>
                     </div>
                     <button class="speech-btn" onclick="speak('${item.vocab}')" title="朗讀">🔊</button>
