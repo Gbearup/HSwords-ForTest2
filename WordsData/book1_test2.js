@@ -174,7 +174,19 @@
     { vocab: "blood sugar", kk: "[`blʌd `ʃʊɡɚ]", definition: "血糖", extension: "【字彙辨識】n. [U]" },
     { vocab: "above-mentioned", kk: "[ə`bʌv `mɛnʃənd]", definition: "以上提到的", extension: "【字彙辨識】adj." },
     { vocab: "chemical", kk: "[`kɛmɪkəl]", definition: "化學的", extension: "【字彙辨識】adj." },
-    { vocab: "odor", kk: "[`odɚ]", definition: "（難聞的）氣味", extension: "【字彙辨識】n. [C]" }
+    { vocab: "odor", kk: "[`odɚ]", definition: "（難聞的）氣味", extension: "【字彙辨識】n. [C]" },
+
+    { vocab: "sense", definition: "n. 感覺", extension: "【補充單字】" },
+    { vocab: "certain", definition: "adj. 某些；確定的", extension: "【補充單字】" },
+    { vocab: "drug", definition: "n. 藥物、毒品", extension: "【補充單字】" },
+    { vocab: "realize", definition: "v. 意識到；實現", extension: "【補充單字】" },
+    { vocab: "disease", definition: "n. 疾病", extension: "【補充單字】" },
+    { vocab: "sudden", definition: "adj. 突然的", extension: "【補充單字】" },
+    { vocab: "rush", definition: "v. 匆忙 ", extension: "【補充單字】" },
+    { vocab: "task", definition: "n. 任務", extension: "【補充單字】" },
+    { vocab: "such", definition: "adj. 這樣的", extension: "【補充單字】" },
+    { vocab: "continue", definition: "v. 繼續", extension: "【補充單字】" }
+    
 ];
 
         // 總測驗資料（自動合併 1~3 課與 Review 1）
