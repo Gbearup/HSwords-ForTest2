@@ -223,30 +223,19 @@ const unit6WordsData = [
   { "vocab": "automobile", "kk": "[`ɔtəməˌbil]", "pos": "n.", "definition": "n. 汽車 (= auto)", "extension": "【延伸】<br>vehicle n. 車輛；任何有輪子的運載工具" },
   { "vocab": "headquarters", "kk": "[`hɛdˌkwɔrtɚz]", "pos": "n.", "definition": "n. 總部 (單複數同形；縮寫為 HQ)", "extension": "【反義詞】<br>branch n. 分部；樹枝 & vt. 分岔；長出新枝" },
   { "vocab": "vision", "kk": "[`vɪʒən]", "pos": "n.", "definition": "n. 視力；影/頭像；眼光，先見，遠見", "extension": "【片語】<br>a person of vision 有遠見的人<br>【衍生詞】<br>(1) visual a. 視力的<br>(2) envision vt. 想像<br>(3) provision n. 準備，供應 (不可數)；乾糧 (恆用複數)<br>(4) supervision n. 監督，管理" },
-  
-   { "vocab": "visible", "kk": "[`vɪsəbḷ]", "pos": "a.", "definition": "a. 肉眼可見的；顯而易見的", "extension": "【反義詞】<br>invisible a. 無形的" },
-  
+  { "vocab": "visible", "kk": "[`vɪsəbḷ]", "pos": "a.", "definition": "a. 肉眼可見的；顯而易見的", "extension": "【反義詞】<br>invisible a. 無形的" },
   { "vocab": "exchange", "kk": "[ɪks`tʃendʒ]", "pos": "vt. & n.", "definition": "vt. & n. 交換", "extension": "【片語】<br>(1) exchange sth with sb 和某人交換某物<br>(2) exchange A for B 以A交換B<br>(3) in exchange for... 交換……<br>【近義詞】<br>(1) change vt. & n. 變換；改變<br>(2) exchangeable a. 可替換的" },
   { "vocab": "practical", "kk": "[`præktɪkḷ]", "pos": "a.", "definition": "a. 實際的", "extension": "【衍生詞】<br>practice n. 練習；常規，習俗；實踐 & vt. 練習<br>【反義詞】<br>impractical a. 不切實際的<br>【延伸】<br>practically adv. 實際地" },
-  
   { "vocab": "practically", "kk": "[`præktɪkḷɪ]", "pos": "adv.", "definition": "adv. 實際地", "extension": "【片語】<br>practically speaking,... 說的實際一點...<br>practially亦等於almost(幾乎),修飾all、every、any、no等4個字</br>" },
-  
-  
   { "vocab": "mend", "kk": "[mɛnd]", "pos": "vt.", "definition": "vt. 修理，修補；改正", "extension": "【似義詞】<br>(1) repair vt. 修理<br>(2) fix vt. 修理" },
   { "vocab": "constant", "kk": "[`kɑnstənt]", "pos": "a. & n.", "definition": "a. 持續的；穩定的 & n. 恆久不變的數量 (常數)；不變的事物", "extension": "【衍生詞】<br>constancy n. 恆久不變；忠貞不渝" },
   { "vocab": "dramatic", "kk": "[drə`mætɪk]", "pos": "a.", "definition": "a. 戲劇的；戲劇性的；強烈的", "extension": "【衍生詞】<br>drama n. 戲劇<br>【似義詞】<br>drastic a. 激烈的" },
-  
   { "vocab": "warn", "kk": "[wɔrn]", "pos": "vt.", "definition": "vt. 警告；告誡", "extension": "【片語】<br>(1) warn sb not to + V 警告某人不要……<br>= warn sb against + N/V-ing<br>(2) warn sb of / about... 就……方面警告某人<br>" },
-  
   { "vocab": "warning", "kk": "[`wɔrnɪŋ]", "pos": "n.", "definition": "n. 警告" },
-  
   { "vocab": "definition", "kk": "[ˌdɛfə`nɪʃən]", "pos": "n.", "definition": "n. 定義；(錄音、電視等的) 清晰度", "extension": "【衍生詞】<br>(1) define vt. 下定義；解釋<br>(2) definite a. 明確的，肯定的<br>(3) definitive a. 明確的；最終的<br>【延伸】<br>HDTV 高解析度/高畫質/高清電視 (*HDTV 是 high definition television 的縮寫)" },
   { "vocab": "afford", "kk": "[ə`fɔrd]", "pos": "vt.", "definition": "vt. 買得起；負擔得起", "extension": "【衍生詞】<br>affordable a. 負擔得起的<br>【用法】<br>afford 通常與 can 或 cannot 並用，形成下列片語：<br>(1) can afford to + V 有能力從事……<br>(2) can afford sth 買得起某物/有能力負擔某物" },
-  
   { "vocab": "missile", "kk": "[`mɪsḷ]", "pos": "n.", "definition": "n. 飛彈" },
   { "vocab": "rocket", "kk": "[`rɑkɪt]", "pos": "n.", "definition": "n. 火箭" },
-  
-  
   { "vocab": "credit", "kk": "[`krɛdɪt]", "pos": "n. & vt.", "definition": "n. 信譽 (不可數)；學分 (可數) & vt. 將功勞歸因於……", "extension": "【片語】<br>(1) on credit 賒帳，信用貸款<br>(2) a credit card 信用卡<br>(3) sb is credited with sth = sth is credited to sb 某事要歸因於某人的功勞" },
   { "vocab": "educate", "kk": "[`ɛdʒəˌket]", "pos": "vt.", "definition": "vt. 教育，栽培", "extension": "【衍生詞】<br>(1) educator n. 教育學家<br>(2) education n. 教育<br>【延伸】<br>educational a. 教育的；教育性的" },
   { "vocab": "preparation", "kk": "[ˌprɛpə`reʃən]", "pos": "n.", "definition": "n. 準備，預備", "extension": "【片語】<br>(1) in preparation for... 以準備……<br>(2) make preparations for... 為……做準備<br>【衍生詞】<br>prepare vt. & vi. 準備，預備" },
@@ -257,10 +246,84 @@ const unit6WordsData = [
   { "vocab": "squirrel", "kk": "[`skwɝəl]", "pos": "n.", "definition": "n. 松鼠", "extension": "【延伸】<br>koala n. 無尾熊 (= koala bear)<br>donkey n. 驢子<br>ox n. (去勢的) 公牛 (複數為 oxen；公牛為 bull)" },
   { "vocab": "koala", "kk": "[`koʊlə]", "pos": "n.", "definition": "n. 無尾熊 (= koala bear)" },
   { "vocab": "donkey", "kk": "[`dɑnki]", "pos": "n.", "definition": "n. 驢子" },
-  { "vocab": "ox", "kk": "[`ɑks]", "pos": "n.", "definition": "n. (去勢的) 公牛 (複數為 oxen；公牛為 bull)" }
+  { "vocab": "ox", "kk": "[`ɑks]", "pos": "n.", "definition": "n. (去勢的) 公牛 (複數為 oxen；公牛為 bull)" },
+  
+  { "vocab": "leopard", "kk": "[`lɛpəd]", "pos": "n.", "definition": "n. 豹", "extension": "【衍生詞】<br>(1) cheetah n. 獵豹<br>(2) jaguar n. 美洲豹" },
+  { "vocab": "dolphin", "kk": "[`dɑlfɪn]", "pos": "n.", "definition": "n. 海豚", "extension": "【衍生詞】<br>porpoise n. 鼠海豚 (體型比 dolphin 小)" },
+  { "vocab": "penguin", "kk": "[`pɛŋgwɪn]", "pos": "n.", "definition": "n. 企鵝", "extension": "" },
+  { "vocab": "owl", "kk": "[aul]", "pos": "n.", "definition": "n. 貓頭鷹", "extension": "" },
+  { "vocab": "parrot", "kk": "[`pærət]", "pos": "n. & vt.", "definition": "n. 鸚鵡 & vt. 機械式地模仿", "extension": "【衍生詞】<br>(1) eagle n. 鷹<br>(2) swallow n. 燕子" },
+  { "vocab": "pigeon", "kk": "[`pɪdʒən]", "pos": "n.", "definition": "n. 灰鴿，鴿子 (比 dove 大)", "extension": "" }
 
 ];
 
+const unit7WordsData = [
+   
+    { vocab: "trend", kk: "[trɛnd]", pos: "n.", definition: "趨勢；潮流", extension: "【相關詞】<br>trendy a. 時髦的<br>keep up with the trends 趕上潮流<br>follow the trends 跟著潮流走" },
+    { vocab: "tide", kk: "[taɪd]", pos: "n. & vt.", definition: "潮汐，潮流 & 幫助（某人）渡過（難關）", extension: "【相關詞】<br>tide sb over 幫某人度過難關<br>Time and tide wait for no man. 歲月不饒人。──諺語" },
+    { vocab: "attract", kk: "[ə`trækt]", pos: "vt.", definition: "吸引；引起……的注意或興趣", extension: "【相關詞】<br>attraction n. 吸引力；誘惑；吸引人的事物<br>attractive a. 誘人的，有吸引力的<br>draw attention from... 吸引……的注意力<br>be attracted to / by... 對……著迷，被……深深吸引" },
+    { vocab: "attractive", kk: "[ə`træktɪv]", pos: "a.", definition: "誘人的，有吸引力的", extension: "" },
+    { vocab: "historic", kk: "[hɪ`stɔrɪk]", pos: "a.", definition: "有歷史性的；歷史上著名的", extension: "【相關詞】<br>history n. 歷史<br>historical a. 與歷史有關的" },
+    { vocab: "historican", kk: "[hɪ`stɔrɪkən]", pos: "n.", definition: "歷史學家", extension: "" },
+    { vocab: "avenue", kk: "[`ævə͵nu]", pos: "n.", definition: "大道；方法", extension: "【相關詞】<br>explore every avenue 尋找各種方法" },
+    { vocab: "alley", kk: "[`ælɪ]", pos: "n.", definition: "巷", extension: "【相關詞】<br>valley n. 山谷" },
+    { vocab: "threat", kk: "[θrɛt]", pos: "n.", definition: "威脅；恐嚇；惡兆，兆頭", extension: "【相關詞】<br>threaten vt. 威脅；有……的前兆<br>pose a threat to... 對……構成威脅" },
+    { vocab: "threaten", kk: "[`θrɛtn]", pos: "vt.", definition: "威脅；有……的前兆", extension: "" },
+    { vocab: "paradise", kk: "[`pærə͵daɪs]", pos: "n.", definition: "天堂；樂園", extension: "" },
+    { vocab: "hell", kk: "[hɛl]", pos: "n.", definition: "地獄", extension: "go to hell 下地獄" },
+    { vocab: "remind", kk: "[rɪ`maɪnd]", pos: "vt.", definition: "提醒；使想起", extension: "【相關詞】<br>reminder n. 提醒物；提示；令人回憶之物<br>remind sb of sth/sb 使人想起某事物／某人<br>remind sb to + V 提醒某人要……" },
+    { vocab: "inner", kk: "[`ɪnɚ]", pos: "a.", definition: "內部的；內心的", extension: "【相關詞】<br>internal a. 內部的<br>inner circle 核心集團；內圈人" },
+    { vocab: "outer", kk: "[`autɚ]", pos: "a.", definition: "外在的；外面的", extension: "【相關詞】<br>in outer space 在外太空 perp. <br>相似 enternal 外部的" },
+    { vocab: "internal", kk: "[ɪn`tɝnl]", pos: "a.", definition: "內部的", extension: "" },
+    { vocab: "hollow", kk: "[`hɑlo]", pos: "a. & n.", definition: "中空的；坑洞，挖落", extension: "【相關詞】<br>solid a. 實心的；固體的<br>hollow out (sth) / hollow (sth) out 把……挖空" },
+    { vocab: "vacant", kk: "[`]", pos: "a.", definition: "空缺的，未被占用的", extension: "相似: available a.空著的" },
+    { vocab: "pilot", kk: "[`paɪlət]", pos: "n. & vt.", definition: "飛行員；領航員 & 駕駛（飛機）", extension: "【相關詞】<br>copilot n. 副駕駛<br>pilot a plane=fly a plane 不能說drive a plane 開飛機" },
+    { vocab: "slave", kk: "[slev]", pos: "n. & vi.", definition: "奴隸（與介詞to並用） & 奴隸般地工作", extension: "【相關詞】<br>slavery n. 奴隸制度<br>enslave vt. 奴役<br>be a slave to... 被……所奴役<br>be enslaved by... 為……費盡心力，常工作到筋疲力盡<br>slave away at... 為……賣命工作" },
+    { vocab: "advise", kk: "[əd`vaɪz]", pos: "vt.", definition: "勸告，忠告，告知；通知", extension: "【相關詞】<br>advice n. 勸告，忠告，建議<br>adviser n. 顧問<br>advisory a. 提供意見的<br>advise sb (not) to + V 勸某人（不要）從事……" },
+    { vocab: "advice", kk: "[əd`vaɪs]", pos: "n.", definition: "勸告，忠告，建議", extension: "" },
+    { vocab: "adviser", kk: "[əd`vaɪzɚ]", pos: "n.", definition: "顧問", extension: "advisory a. 提供意見的" },
+    { vocab: "stare", kk: "[stɛr]", pos: "vi. & n.", definition: "凝視；瞪視（與介詞at並用） & 凝視", extension: "【相關詞】<br>glance vi. 瞥視 & n. 另一瞥<br>stare at... 凝視；瞪視（與介詞at並用） & n. 凝視<br>glance at... 匆匆一瞥<br>at first glance 乍看之下<br>peep vi. 偷窺（也與介詞at並用）" },
+    { vocab: "glance", kk: "[ɡlæns]", pos: "vi. & n.", definition: "瞥視 & 另一瞥", extension: "" },
+    { vocab: "sum", kk: "[sʌm]", pos: "n. & vt.", definition: "合計，總額；數目；金額 & 概述", extension: "【相關詞】<br>summary n. 概述，概要<br>summarize vt. 概括，摘錄大意<br>a large / small sum of money 巨額／小額金錢<br>to sum up, ... 總之，……<br>in sum, ... 總結來說，……概括來說，……" },
+    { vocab: "summary", kk: "[`sʌmərɪ]", pos: "n.", definition: "概述，概要", extension: "" },
+    // { vocab: "summarize", kk: "[`sʌmə͵raɪz]", pos: "vt.", definition: "概括，摘錄大意", extension: "" },
+    { vocab: "necessity", kk: "[nə`sɛsətɪ]", pos: "n.", definition: "需要（不可數）；必需品（可數）", extension: "【衍生詞】<br>necessary a. 必須的；不可避免的<br>necessarily adv. 必然的" },
+    { vocab: "sensible", kk: "[`sɛnsəbl]", pos: "a.", definition: "明智的；顯著的", extension: "【衍生詞】<br>sense n. 感覺 & vt. 察覺<br>sensitivity n. 靈敏；易感；敏感度<br>sensor n. 感應器<br>insensible a. 失去意識的<br>sensation n. 感覺；騷動" },
+    // { vocab: "sense", kk: "[sɛns]", pos: "n. & vt.", definition: "感覺 & 察覺", extension: "" },
+    // { vocab: "sensitivity", kk: "[͵sɛnsə`vɪtɪ]", pos: "n.", definition: "靈敏；易感；敏感度", extension: "" },
+    // { vocab: "sensor", kk: "[`sɛnsɚ]", pos: "n.", definition: "感應器", extension: "" },
+    // { vocab: "insensible", kk: "[ɪn`sɛnsəbl]", pos: "a.", definition: "失去意識的", extension: "" },
+    // { vocab: "sensation", kk: "[sɛn`seʃən]", pos: "n.", definition: "感覺；騷動", extension: "" },
+    { vocab: "sufficient", kk: "[sə`fɪʃənt]", pos: "a.", definition: "充足的，足夠的", extension: "【片語】<br>be sufficient for sth 足以應付對某事 <br>sufficiency  充足<br>insufficiency  不足<br>【相似】enough a. 充分的、足夠的"} ,
+    // { vocab: "insufficient", kk: "[ˌɪnsə`fɪʃənt]", pos: "a.", definition: "不足的", extension: "" },
+    { vocab: "crisp", kk: "[krɪsp]", pos: "a.", definition: "脆的", extension: "【相似】<br> crunchy 鮮脆的" },
+    { vocab: "almond", kk: "[`ɑmənd]", pos: "n.", definition: "杏仁", extension: "【片語】<br>almond eyes 杏眼<br>【相似】<br>apricot杏桃" },
+    { vocab: "crop", kk: "[krɑp]", pos: "n. & vt.", definition: "農作物 & （草等）吃（牛羊等）；把（頭髮）剪得很短", extension: "【片語】<br>have one's hair cropped <br>某人頭髮剪得很短<br>a crop circle 麥田圈<br>動詞三態 crop-cropped-cropped" },
+    { vocab: "lettuce", kk: "[`lɛtɪs]", pos: "n.", definition: "生菜，萵苣", extension: "【相似詞】<br>cabbage n. 高麗菜，包心菜" },
+    // { vocab: "cabbage", kk: "[`kæbɪdʒ]", pos: "n.", definition: "高麗菜，包心菜", extension: "" },
+    { vocab: "onion", kk: "[`ʌnjən]", pos: "n.", definition: "洋蔥", extension: "【片語】<br>peel an onion 剝洋蔥<br>green onion (青)蔥<br>green onion pancake 蔥油餅" },
+    { vocab: "spinach", kk: "[`spɪnɪtʃ]", pos: "n.", definition: "菠菜", extension: "" },
+    { vocab: "bamboo", kk: "[bæm`bu]", pos: "n.", definition: "竹子", extension: "【相關詞】<br>a bamboo shoot 竹筍" },
+    { vocab: "widen", kk: "[`waɪdn]", pos: "vt. & vi.", definition: "使變寬 & 變寬", extension: "【相關詞】<br>wide a. 寬的；廣泛的<br>widely adv. 廣泛地<br>width n. 寬度" },
+    // { vocab: "wide", kk: "[waɪd]", pos: "a.", definition: "寬的；廣泛的", extension: "" },
+    // { vocab: "widely", kk: "[`waɪdlɪ]", pos: "adv.", definition: "廣泛地", extension: "" },
+    // { vocab: "width", kk: "[wɪdθ]", pos: "n.", definition: "寬度", extension: "" },
+    { vocab: "weaken", kk: "[`wikən]", pos: "vt. & vi.", definition: "減弱，削弱", extension: "【相關詞】<br>weakness n. 虛弱；弱點" },
+    // { vocab: "weakness", kk: "[`wiknɪs]", pos: "n.", definition: "虛弱；弱點", extension: "" },
+    { vocab: "tent", kk: "[tɛnt]", pos: "n.", definition: "帳篷", extension: "【相關詞】<br>camp n. 營地 & vi. 露營<br>pitch a tent=put up a tent 搭帳篷" },
+    // { vocab: "camp", kk: "[kæmp]", pos: "n. & vi.", definition: "營地 & 露營", extension: "" },
+    { vocab: "purse", kk: "[pɝs]", pos: "n.", definition: "女用手提包（= handbag）；女用小錢包", extension: "【用法】在英式英語中，purse指女用小錢包，類似男用的wallet。在美式英語中，purse就是女用手提包。" },
+    { vocab: "observe", kk: "[əb`zɝv]", pos: "vt.", definition: "觀察；遵守", extension: "【相關詞】<br>observation n. 觀察<br>observer n. 觀察員<br>observant a. 有觀察力的；嚴格遵守的<br>obey vt. 服從" },
+    // { vocab: "observation", kk: "[͵ɑbzɚ`veʃən]", pos: "n.", definition: "觀察", extension: "" },
+    // { vocab: "observer", kk: "[əb`zɝvɚ]", pos: "n.", definition: "觀察員", extension: "" },
+    // { vocab: "observant", kk: "[əb`zɝvənt]", pos: "a.", definition: "有觀察力的；嚴格遵守的", extension: "" },
+    // { vocab: "obey", kk: "[o`be]", pos: "vt.", definition: "服從", extension: "" },
+    { vocab: "junior", kk: "[`dʒunjɚ]", pos: "n. & a.", definition: "大三學生；年少者 & 資深的 / 階級／職位比某人低", extension: "【片語】<br> be junior to sb <br>階級／職位比某人低 <br>be sb's junior by three years <br>比某人小3歲" },
+    { vocab: "senior", kk: "[`sinjɚ]", pos: "n. & a.", definition: "大四學生；年長者 & 地位較高的", extension: "【片語】<br>be senior to sb <br>階級／職位比某人高 <br>be sb's senior by three years <br>比某人大3歲" },
+    { vocab: "marker", kk: "[`mɑrkɚ]", pos: "n.", definition: "奇異筆；馬克筆；標誌", extension: "" },
+    { vocab: "pile", kk: "[paɪl]", pos: "n. & vi. & vt.", definition: "一堆 & 堆積 (與介詞up並用) & 累積，堆積", extension: "【片語】<br>a pile of... 一堆……<br>pile up (sth) / pile (sth) up <br>(將某物) 堆積起來" },
+    { vocab: "steal", kk: "[stil]", pos: "vt.", definition: "偷竊", extension: " 動詞三態 steal-stole-stolen " }
+];
 
 // 如果 7000 單字專區也需要像 LiveABC 一樣的總測驗合併陣列，可直接使用：
 const allData = [

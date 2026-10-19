@@ -35,21 +35,35 @@
         // 【動態設定區】以後只要在這裡加單元，或在 JS 加資料，HTML 永遠不用動！
         // =========================================================================
         const unitsConfig = [
-            // { id: 'lesson1', shortId: 'l1', name: '第1單元', dataVar: 'lesson1Data' },
-            // { id: 'lesson2', shortId: 'l2', name: '第2單元', dataVar: 'lesson2Data' },
-            // { id: 'lesson3', shortId: 'l3', name: '第3單元', dataVar: 'lesson3Data' },
-            { id: 'lesson6', shortId: 'l6', name: '第6單元', dataVar: 'unit6WordsData' }
-            // 之後要加第5單元、第6單元...直接在這裡繼續加物件即可：
-            // { id: 'lesson5', shortId: 'l5', name: '第5課', dataVar: 'magazine10w5WordsData' },
+            // { id: 'lesson1', shortId: 'l1', name: '第1單元', dataVar: 'unit1Data' },
+            // { id: 'lesson2', shortId: 'l2', name: '第2單元', dataVar: 'unit2Data' },
+            // { id: 'lesson3', shortId: 'l3', name: '第3單元', dataVar: 'unit3Data' },
+            // { id: 'lesson4', shortId: 'l4', name: '第4單元', dataVar: 'unit4Data' },
+            // { id: 'lesson5', shortId: 'l5', name: '第5單元', dataVar: 'unit5Data' },
+            { id: 'lesson6', shortId: 'l6', name: '第6單元', dataVar: 'unit6WordsData' },
+            { id: 'lesson7', shortId: 'l7', name: '第7單元', dataVar: 'unit7WordsData' },
+
+
+            // 之後要加單元...直接在這裡繼續加物件即可：
+            // { id: 'lesson8', shortId: 'l8', name: '第8單元', dataVar: 'unit8WordsData' },
+            // { id: 'lesson9', shortId: 'l9', name: '第9單元', dataVar: 'unit9WordsData' },
+            // { id: 'lesson10', shortId: 'l10', name: '第10單元', dataVar: 'unit10WordsData' },
         ];
 
         const lessonWordsMap = {
-            //   magazine10w1WordsData: magazine10w1WordsData,
-            //   magazine10w2WordsData: magazine10w2WordsData,
-            //   magazine10w3WordsData: magazine10w3WordsData,
-              unit6WordsData: unit6WordsData
+            //   unit1WordsData: unit1WordsData,
+            //   unit2WordsData: unit2WordsData,
+            //   unit3WordsData: unit3WordsData,
+            //   unit4WordsData: unit4WordsData,
+            //   unit5WordsData: unit5WordsData,
+              unit6WordsData: unit6WordsData,
+              unit7WordsData: unit7WordsData
+
+
              // 之後要加第5週、第6週...直接在這裡繼續加物件即可：
-             // magazine10w5WordsData: magazine10w5WordsData,
+             // unit8WordsData: unit8WordsData,
+            //  unit9WordsData: unit9WordsData,
+            //  unit10WordsData: unit10WordsData
              //注意： 這裡的 magazine10w5WordsData 必須確實存在，否則可能出現 ReferenceError，導致後續程式無法執行。
          };
 
