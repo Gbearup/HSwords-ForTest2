@@ -126,39 +126,44 @@ const magazine10w7WordsData = [
 // ==================== Unit 8 ====================
 const magazine10w8WordsData = [
     // { vocab: "daring", kk: "[`dɛrɪŋ]", definition: "adj. 大膽創新的；勇於冒險的", extension: "【例句】<br>• After a daring climb, Sam reached the top of the mountain." },
-   { vocab: "monster", kk: "[`mɑnstɚ]", pos: "n.", definition: "n. 怪物、怪獸", extension: "【例句】<br>• Oliver drew a monster with big teeth." },
+    { vocab: "monster", kk: "[`mɑnstɚ]", pos: "n.", definition: "n. 怪物、怪獸", extension: "【例句】<br>• Oliver drew a monster with big teeth." },
     { vocab: "frightening", kk: "[`fraɪtṇɪŋ]", pos: "adj.", definition: "adj. 令人害怕的；駭人的", extension: "【例句】<br>• The storm was loud and frightening." },
     { vocab: "flash", kk: "[flæʃ]", definition: "v. （使）閃爍（燈光）；（使）閃耀", pos: "v.", extension: "【例句】<br>• The camera flashed when Jude took a picture." },
-    { vocab: "kilometer", kk: "[kə`lɑmətɚ]", pos: "n.", definition: "n. 公里", extension: "【例句】<br>• Violet ran two kilometers before breakfast." }
+    { vocab: "kilometer", kk: "[kə`lɑmətɚ]", pos: "n.", definition: "n. 公里", extension: "【例句】<br>• Violet ran two kilometers before breakfast." },
     
+    { vocab: "rural", kk: "", pos: "adj.", definition: "adj. 鄉村的、偏僻的", extension: "【字彙小筆記】" },
+    { vocab: "demand", kk: "", pos: "v.", definition: "v. 需求", extension: "【字彙小筆記】" },
+    { vocab: "golf", kk: "", pos: "n.", definition: "n. 高爾夫", extension: "【Info Box】" },
+    { vocab: "unexpected", kk: "", pos: "adj.", definition: "adj. 未預期的、意料之外的", extension: "【Info Box】" },
+    { vocab: "take on", kk: "", pos: "phr.", definition: "phr. 承擔、對抗、與...較量", extension: "【Info Box】" }
 
              
 ];
 
 const magazine10w81WordsData = [
-{ vocab: "develop", kk: "", pos: "v.", definition: "v. 發展", extension: "【個人需求補充單字】" },
-     { vocab: "clever", kk: "", pos: "adj.", definition: "adj. 巧妙的、聰明的", extension: "【個人需求補充單字】" },
-      { vocab: "solution", kk: "", pos: "n.", definition: "n. 解決方法", extension: "【個人需求補充單字】" },
-       { vocab: "wild", kk: "", pos: "adj.", definition: "adj. 野生的 ", extension: "【個人需求補充單字】" },
-        { vocab: "climate", kk: "", pos: "n.", definition: "n. 氣候 ", extension: "【個人需求補充單字】" },
-         { vocab: "frequently", kk: "", pos: "adv.", definition: "adv. 頻繁的", extension: "【個人需求補充單字】" },
-          { vocab: "local", kk: "", pos: "adj.", definition: "adj. 在地的", extension: "【個人需求補充單字】" },
-           { vocab: "course", kk: "", pos: "n.", definition: "n. 課程", extension: "【個人需求補充單字】" },
-            { vocab: "operator", kk: "", pos: "n.", definition: "n. 操作員", extension: "【個人需求補充單字】" },
-             { vocab: "rural", kk: "", pos: "adj.", definition: "adj. 鄉村的", extension: "【個人需求補充單字】" },
-             { vocab: "technology", kk: "", pos: "n.", definition: "n. 技術", extension: "【個人需求補充單字】" },
-            { vocab: "solve", kk: "", pos: "v.", definition: "v. 解決", extension: "【個人需求補充單字】" },
-            { vocab: "unexpected", kk: "", pos: "adj.", definition: "adj. 未預期的、意料之外的", extension: "【個人需求補充單字】" },
-            { vocab: "motion", kk: "", pos: "n.", definition: "n. 動作", extension: "【個人需求補充單字】" },
-            { vocab: "pressure", kk: "", pos: "n.", definition: "n. 壓力", extension: "【個人需求補充單字】" },
-            { vocab: "receive", kk: "", pos: "v.", definition: "v. 接收", extension: "【個人需求補充單字】" },
-            { vocab: "cancel", kk: "", pos: "v.", definition: "v. 取消", extension: "【個人需求補充單字】" },
-            { vocab: "maintain", kk: "", pos: "v.", definition: "v. 維持", extension: "【個人需求補充單字】" },
-            { vocab: "fit in", kk: "", pos: "phr.", definition: "v. 適應", extension: "【補充片語】" },
-            { vocab: "try out", kk: "", pos: "phr.", definition: "v. 試用", extension: "【補充片語】" },
-            { vocab: "hand over", kk: "", pos: "phr.", definition: "v. 移交、交出", extension: "【補充片語】" },
-            { vocab: "go through", kk: "", pos: "phr.", definition: "v. 經歷", extension: "【補充片語】" },
-            { vocab: "take on", kk: "", pos: "phr.", definition: "v. 承擔、對抗、與...較量", extension: "【補充片語】" }
+
+
+{ vocab: "develop", kk: "", pos: "v.", definition: "v. 發展", extension: "【個人需求個人需求補充單字】" },
+     { vocab: "clever", kk: "", pos: "adj.", definition: "adj. 巧妙的、聰明的", extension: "【個人需求個人需求補充單字】" },
+      { vocab: "solution", kk: "", pos: "n.", definition: "n. 解決方法", extension: "【個人需求個人需求補充單字】" },
+       { vocab: "wild", kk: "", pos: "adj.", definition: "adj. 野生的 ", extension: "【個人需求個人需求補充單字】" },
+        { vocab: "climate", kk: "", pos: "n.", definition: "n. 氣候 ", extension: "【個人需求個人需求補充單字】" },
+         { vocab: "frequently", kk: "", pos: "adv.", definition: "adv. 頻繁的", extension: "【個人需求個人需求補充單字】" },
+          { vocab: "local", kk: "", pos: "adj.", definition: "adj. 在地的", extension: "【個人需求個人需求補充單字】" },
+           { vocab: "course", kk: "", pos: "n.", definition: "n. 課程", extension: "【個人需求個人需求補充單字】" },
+            { vocab: "operator", kk: "", pos: "n.", definition: "n. 操作員", extension: "【個人需求個人需求補充單字】" },
+             { vocab: "technology", kk: "", pos: "n.", definition: "n. 技術", extension: "【個人需求個人需求補充單字】" },
+            { vocab: "solve", kk: "", pos: "v.", definition: "v. 解決", extension: "【個人需求個人需求補充單字】" },
+            { vocab: "motion", kk: "", pos: "n.", definition: "n. 動作", extension: "【個人需求個人需求補充單字】" },
+            { vocab: "pressure", kk: "", pos: "n.", definition: "n. 壓力", extension: "【個人需求個人需求補充單字】" },
+            { vocab: "receive", kk: "", pos: "v.", definition: "v. 接收", extension: "【個人需求個人需求補充單字】" },
+            { vocab: "cancel", kk: "", pos: "v.", definition: "v. 取消", extension: "【個人需求個人需求補充單字】" },
+            { vocab: "maintain", kk: "", pos: "v.", definition: "v. 維持", extension: "【個人需求個人需求補充單字】" },
+            { vocab: "fit in", kk: "", pos: "phr.", definition: "v. 適應", extension: "【個人需求補充片語】" },
+            { vocab: "try out", kk: "", pos: "phr.", definition: "v. 試用", extension: "【個人需求補充片語】" },
+            { vocab: "hand over", kk: "", pos: "phr.", definition: "v. 移交、交出", extension: "【個人需求補充片語】" },
+            { vocab: "go through", kk: "", pos: "phr.", definition: "v. 經歷", extension: "【個人需求補充片語】" },
+            
             
     ];
 
@@ -174,52 +179,46 @@ const magazine10w9WordsData = [
     { vocab: "oven", kk: "[`ʌvən]", pos: "n.", definition: "n. 烤箱、烤爐", extension: "【例句】<br>• The cookies smell good in the oven." },
     { vocab: "avenue", kk: "[`ævəˌnu]", pos: "n.", definition: "n. 大街、大道", extension: "【例句】<br>• The avenue was busy in the morning." },
     { vocab: "shadow", kk: "[`ʃædo]", pos: "n.", definition: "n. 陰影、陰暗處；影子", extension: "【例句】<br>• Long shadows covered the road." },
-    { vocab: "tasty", kk: "[`testi]", pos: "adj.", definition: "adj. 美味的、好吃的", extension: "【例句】<br>• My grandmother made a tasty salad." }
+    { vocab: "lookout", kk: "[`lʊkˌaʊt]", pos: "n.", definition: "n. 觀景點、瞭望臺", extension: "【字彙小筆記】" },
+    { vocab: "snorkeling", kk: "[`snɔrkəlɪŋ]", pos: "n.", definition: "n. 浮潛（運動）", extension: "【字彙小筆記】" },
+    { vocab: "scenery", kk: "[`sinərɪ]", pos: "n.", definition: "n. 風景、景色（不可數）", extension: "【字彙小筆記】" },
+    { vocab: "throne", kk: "[θron]", pos: "n.", definition: "n. 王座、王位", extension: "【字彙小筆記】" },
+    { vocab: "celebration", kk: "[ˌsɛlə`breʃən]", pos: "n.", definition: "n. 慶祝活動、慶典", extension: "【字彙小筆記】" },
+    { vocab: "plantation", kk: "[plæn`teʃən]", pos: "n.", definition: "n. 農場、莊園", extension: "【字彙小筆記】" },
+    { vocab: "immigrant", kk: "[`ɪməɡrənt]", pos: "n.", definition: "n. (外來的)移民", extension: "【字彙小筆記】" },
+    { vocab: "custome", kk: "[`]", pos: "n.", definition: "n. (特殊場合的)服裝；戲服", extension: "【字彙小筆記】" },
+    { vocab: "sweeping", kk: "[]", pos: "adj.", definition: "adj. 遼闊的、壯闊的", extension: "【Infor Box】" },
+    { vocab: "settle into N.", kk: "[`sɛtḷ]", pos: "v.", definition: "prep v. (愉悅而放鬆弛地)融入、適應(某種環境或生活)", extension: "【Info Box】" },
+    { vocab: "trade wind", kk: "", pos: "n.", definition: "n. 信風、貿易風", extension: "【Info Box】" }
+    
 ];
 
 const magazine10w91WordsData = [
-            // ==================== 圖片桃紅色螢光筆劃記單字 ====================
-    { vocab: "gentle", kk: "[`dʒɛntḷ]", pos: "adj.", definition: "adj. 溫和的", extension: "【補充單字】" },
-    { vocab: "trade wind", kk: "", pos: "n.", definition: "n. 信風、貿易風", extension: "【補充單字】" },
-    { vocab: "crowd", kk: "[kraʊd]", pos: "n.", definition: "n. 人潮、人群", extension: "【補充單字】" },
-    { vocab: "relaxed", kk: "[rɪ`lækst]", pos: "adj.", definition: "adj. 輕鬆的、放鬆的", extension: "【補充單字】" },
-    { vocab: "appeal", kk: "[ə`pil]", pos: "n.", definition: "n. 吸引力、魅力", extension: "【補充單字】" },
-    { vocab: "volcanic crater", kk: "", pos: "n.", definition: "n. 火山口", extension: "【補充單字】" },
-    { vocab: "edge", kk: "[ɛdʒ]", pos: "n.", definition: "n. 邊緣", extension: "【補充單字】" },
-    { vocab: "trail", kk: "[trel]", pos: "n.", definition: "n. 步道、小徑", extension: "【補充單字】" },
-    { vocab: "tunnel", kk: "[`tʌnḷ]", pos: "n.", definition: "n. 隧道、地道", extension: "【補充單字】" },
-    { vocab: "lookout", kk: "[`lʊkˌaʊt]", pos: "n.", definition: "n. 觀景點、瞭望臺", extension: "【補充單字】" },
-    { vocab: "view", kk: "[vju]", pos: "n.", definition: "n. 風景、景色", extension: "【補充單字】" },
-    { vocab: "coast", kk: "[kost]", pos: "n.", definition: "n. 海岸", extension: "【補充單字】" },
-    { vocab: "farther", kk: "[`fɑrðɚ]", pos: "adv.", definition: "adv. 更遠地", extension: "【補充單字】" },
-    { vocab: "calmer", kk: "", pos: "adj.", definition: "adj. 較平靜的、較安靜的", extension: "【補充單字】" },
-    { vocab: "snorkeling", kk: "[`snɔrkəlɪŋ]", pos: "n.", definition: "n. 浮潛（運動）", extension: "【補充單字】" },
-    { vocab: "beyond", kk: "[bɪ`jɑnd]", pos: "prep.", definition: "prep. 除……之外；超越", extension: "【補充單字】" },
-    { vocab: "scenery", kk: "[`sinərɪ]", pos: "n.", definition: "n. 風景、景色（不可數）", extension: "【補充單字】" },
-    { vocab: "royal", kk: "[`rɔɪəl]", pos: "adj.", definition: "adj. 王室的、皇家的", extension: "【補充單字】" },
-    { vocab: "palace", kk: "[`pælɪs]", pos: "n.", definition: "n. 宮殿", extension: "【補充單字】" },
-    { vocab: "technology", kk: "[tɛk`nɑlədʒɪ]", pos: "n.", definition: "n. 科技、技術", extension: "【補充單字】" },
-    { vocab: "electricity", kk: "[ɪˌlɛk`trɪsətɪ]", pos: "n.", definition: "n. 電力、電", extension: "【補充單字】" },
-    { vocab: "throne", kk: "[θron]", pos: "n.", definition: "n. 王座、王位", extension: "【補充單字】" },
-    { vocab: "native", kk: "[`netɪv]", pos: "adj.", definition: "adj. 原住民的；土生土長的", extension: "【補充單字】" },
-    { vocab: "raw", kk: "[rɔ]", pos: "adj.", definition: "adj. 生的、未煮熟的", extension: "【補充單字】" },
-    { vocab: "oven", kk: "[`ʌvən]", pos: "n.", definition: "n. 烤箱、烤爐", extension: "【補充單字】" },
-    { vocab: "tender", kk: "[`tɛndɚ]", pos: "adj.", definition: "adj. （肉質）軟嫩的", extension: "【補充單字】" },
-    { vocab: "immigrant", kk: "[`ɪməɡrənt]", pos: "n.", definition: "n. 移民", extension: "【補充單字】" },
-    { vocab: "fluffy", kk: "[`flʌfɪ]", pos: "adj.", definition: "adj. 松軟的、鬆軟膨鬆的", extension: "【補充單字】" },
-    { vocab: "syrup", kk: "[`sɪrəp]", pos: "n.", definition: "n. 果糖、糖漿", extension: "【補充單字】" },
-    { vocab: "traditional", kk: "[trə`dɪʃənḷ]", pos: "adj.", definition: "adj. 傳統的", extension: "【補充單字】" },
-    { vocab: "sample", kk: "[`sæmpḷ]", pos: "v.", definition: "v. 品嚐、體驗", extension: "【補充單字】" },
-    { vocab: "avenue", kk: "[`ævəˌnu]", pos: "n.", definition: "n. 大街、大道", extension: "【補充單字】" },
-    { vocab: "fills with", kk: "", pos: "phr.", definition: "phr. 充滿……", extension: "【補充片語】" },
-    { vocab: "celebration", kk: "[ˌsɛlə`breʃən]", pos: "n.", definition: "n. 慶祝活動、慶典", extension: "【補充單字】" },
-    { vocab: "plantation", kk: "[plæn`teʃən]", pos: "n.", definition: "n. 農場、莊園", extension: "【補充單字】" },
-    { vocab: "village", kk: "[`vɪlɪdʒ]", pos: "n.", definition: "n. 村莊", extension: "【補充單字】" },
-    { vocab: "shadow", kk: "[`ʃædo]", pos: "n.", definition: "n. 影子、陰影", extension: "【補充單字】" },
-    { vocab: "crowds", kk: "[kraʊdz]", pos: "n.", definition: "n. 人群、人潮", extension: "【補充單字】" },
-    { vocab: "settle", kk: "[`sɛtḷ]", pos: "v.", definition: "v. 安頓、融入", extension: "【補充單字】" },
-    { vocab: "aspect", kk: "[`æspɛkt]", pos: "n.", definition: "n. 方面", extension: "【補充單字】" },
-    { vocab: "transportation", kk: "[ˌtrænspɚ`teʃən]", pos: "n.", definition: "n. 交通運輸", extension: "【補充單字】" }
+    // ==================== 圖片桃紅色螢光筆劃記單字 ====================
+
+    { vocab: "gentle", kk: "[`dʒɛntḷ]", pos: "adj.", definition: "adj. 溫和的", extension: "【個人需求補充單字】" },
+    { vocab: "crowd", kk: "[kraʊd]", pos: "n.", definition: "n. 人潮、人群", extension: "【個人需求補充單字】" },
+    { vocab: "volcanic crater", kk: "", pos: "n.", definition: "n. 火山口", extension: "【個人需求補充單字】" },
+    { vocab: "edge", kk: "[ɛdʒ]", pos: "n.", definition: "n. 邊緣", extension: "【個人需求補充單字】" },
+    { vocab: "trail", kk: "[trel]", pos: "n.", definition: "n. 步道、小徑", extension: "【個人需求補充單字】" },
+    { vocab: "view", kk: "[vju]", pos: "n.", definition: "n. 風景、景色", extension: "【個人需求補充單字】" },
+    { vocab: "coast", kk: "[kost]", pos: "n.", definition: "n. 海岸", extension: "【個人需求補充單字】" },
+    { vocab: "farther", kk: "[`fɑrðɚ]", pos: "adv.", definition: "adv. 更遠地", extension: "【個人需求補充單字】" },
+    { vocab: "calmer", kk: "", pos: "adj.", definition: "adj. 較平靜的、較安靜的", extension: "【個人需求補充單字】" },
+    { vocab: "beyond", kk: "[bɪ`jɑnd]", pos: "prep.", definition: "prep. 除……之外；超越", extension: "【個人需求補充單字】" },
+    { vocab: "royal", kk: "[`rɔɪəl]", pos: "adj.", definition: "adj. 王室的、皇家的", extension: "【個人需求補充單字】" },
+    { vocab: "palace", kk: "[`pælɪs]", pos: "n.", definition: "n. 宮殿", extension: "【個人需求補充單字】" },
+    { vocab: "technology", kk: "[tɛk`nɑlədʒɪ]", pos: "n.", definition: "n. 科技、技術", extension: "【個人需求補充單字】" },
+    { vocab: "tender", kk: "[`tɛndɚ]", pos: "adj.", definition: "adj. （肉質）軟嫩的", extension: "【個人需求補充單字】" },
+    { vocab: "fluffy", kk: "[`flʌfɪ]", pos: "adj.", definition: "adj. 松軟的、鬆軟膨鬆的", extension: "【個人需求補充單字】" },
+    { vocab: "syrup", kk: "[`sɪrəp]", pos: "n.", definition: "n. 果糖、糖漿", extension: "【個人需求補充單字】" },
+    { vocab: "traditional", kk: "[trə`dɪʃənḷ]", pos: "adj.", definition: "adj. 傳統的", extension: "【個人需求補充單字】" },
+    { vocab: "sample", kk: "[`sæmpḷ]", pos: "v.", definition: "v. 品嚐、體驗", extension: "【Info Box】" },
+    { vocab: "fill with", kk: "", pos: "phr.", definition: "phr. 充滿……", extension: "【個人需求補充片語】" },
+    { vocab: "village", kk: "[`vɪlɪdʒ]", pos: "n.", definition: "n. 村莊", extension: "【個人需求補充單字】" },
+    { vocab: "crowds", kk: "[kraʊdz]", pos: "n.", definition: "n. 人群、人潮", extension: "【個人需求補充單字】" },
+    { vocab: "aspect", kk: "[`æspɛkt]", pos: "n.", definition: "n. 方面", extension: "【個人需求補充單字】" },
+    { vocab: "transportation", kk: "[ˌtrænspɚ`teʃən]", pos: "n.", definition: "n. 交通運輸", extension: "【個人需求補充單字】" }
 ];
 
 
@@ -229,37 +228,39 @@ const magazine10w91WordsData = [
 
 // ==================== Unit 10 ====================
 const magazine10w10WordsData = [
+    { vocab: "tasty", kk: "[`testi]", pos: "adj.", definition: "adj. 美味的、好吃的", extension: "【例句】<br>• My grandmother made a tasty salad." },
     { vocab: "vitamin", kk: "[`vaɪtəmɪn]", pos: "n.", definition: "n. 維生素、維他命", extension: "【例句】<br>• Carrots have a vitamin that is good for your eyes." },
     { vocab: "ripe", kk: "[raɪp]", pos: "adj.", definition: "adj. （果實或作物）成熟的", extension: "【例句】<br>• The peach is ripe, so eat it today." },
     { vocab: "paradise", kk: "[`pɛrəˌdaɪs]", pos: "n.", definition: "n. 天堂；樂園", extension: "【例句】<br>• The garden is a paradise for birds." },
-    { vocab: "toward", kk: "[tɔrd]", pos: "prep.", definition: "prep. 朝、向", extension: "【例句】<br>• Let's walk toward the beach soon." },
+    
+    
     { vocab: "the taste of", kk: "", pos: "phr.", definition: "phr. ……的味道", extension: "【例句】<br>• The taste of fresh strawberries is one of my favorite flavors." },
     { vocab: "become familiar with", kk: "", pos: "phr.", definition: "phr. 熟悉……", extension: "【例句】<br>• Theo became familiar with the city after living there for a year." },
     { vocab: "consider", kk: "", pos: "v.", definition: "v. 仔細思考、認真考慮", extension: "【例句】<br>• I will consider your ideas carefully." },
-    { vocab: "go from strength to strength", kk: "", pos: "phr.", definition: "phr. 越來越成功、持續進步、蒸蒸日上", extension: "【例句】<br>• The company has gone from strength to strength over the years." }
+    { vocab: "go from strength to strength", kk: "", pos: "phr.", definition: "phr. 越來越成功、持續進步、蒸蒸日上", extension: "【例句】<br>• The company has gone from strength to strength over the years." },
+    { vocab: "in season", kk: "", pos: "phr.", definition: "phr. 當季的；符合時令的", extension: "【Info Box】" },
+    { vocab: "go ahead", kk: "", pos: "phr.", definition: "phr. 請便；開始吧；去做吧", extension: "【Info Box】" },
+    { vocab: "be rich in", kk: "", pos: "phr.", definition: "phr. 富含……", extension: "【Info Box】" },
+    { vocab: "refreshing", kk: "[rɪ`frɛʃɪŋ]", pos: "adj.", definition: "adj. 清爽的；令人精神一振的", extension: "【味口感形容詞】" },
+    { vocab: "crunchy", kk: "[`krʌntʃi]", pos: "adj.", definition: "adj. 脆的、清脆的", extension: "【風味口感形容詞】" },
+    { vocab: "mild", kk: "[maɪld]", pos: "adj.", definition: "adj. （味道）清淡的、溫和的", extension: "【風味口感形容詞】" },
+    { vocab: "earthy", kk: "[`ɝθi]", pos: "adj.", definition: "adj. 土質味的；草本風味的(稱讚食物風味天然樸實)", extension: "【風味口感形容詞】" },
+    { vocab: "creamy", kk: "[`krimi]", pos: "adj.", definition: "adj. 口感滑順的；奶油般柔滑的", extension: "【風味口感形容詞】" }
 ];
 
 
-   // ==================== 第10單元補充（桃紅色螢光筆） ====================
+// ==================== 第10單元補充（桃紅色螢光筆） ====================
 const magazine10w101WordsData = [
-    { vocab: "thoughtful", kk: "[`θɔtfəl]", pos: "adj.", definition: "adj. 體貼的；考慮周到的", extension: "【補充單字】" },
-    { vocab: "soft", kk: "[sɔft]", pos: "adj.", definition: "adj. 軟的、柔和的", extension: "【補充單字】" },
-    { vocab: "crunchy", kk: "[`krʌntʃi]", pos: "adj.", definition: "adj. 脆的、清脆的", extension: "【補充單字】" },
-    { vocab: "flavor", kk: "[`flevɚ]", pos: "n.", definition: "n. 風味、味道", extension: "【補充單字】" },
-    { vocab: "mild", kk: "[maɪld]", pos: "adj.", definition: "adj. （味道）清淡的、溫和的", extension: "【補充單字】" },
-    { vocab: "earthy", kk: "[`ɝθi]", pos: "adj.", definition: "adj. 土質味的；草本風味的", extension: "【補充單字】" },
-    { vocab: "gently", kk: "[`dʒɛntli]", pos: "adv.", definition: "adv. 輕輕地、溫和地", extension: "【補充單字】" },
-    { vocab: "beloved", kk: "[bɪ`lʌvəd]", pos: "adj.", definition: "adj. 深受喜愛的；心愛的", extension: "【補充單字】" },
-    { vocab: "definitely", kk: "[`dɛfənɪtli]", pos: "adv.", definition: "adv. 確實；肯定、當然", extension: "【補充單字】" },
-    { vocab: "refreshing", kk: "[rɪ`frɛʃɪŋ]", pos: "adj.", definition: "adj. 清爽的；令人精神一振的", extension: "【補充單字】" },
-    { vocab: "creamy", kk: "[`krimi]", pos: "adj.", definition: "adj. 口感滑順的；奶油般柔滑的", extension: "【補充單字】" },
-    { vocab: "in season", kk: "", pos: "phr.", definition: "phr. 當季的；符合時令的", extension: "【補充片語】" },
-    { vocab: "go ahead", kk: "", pos: "phr.", definition: "phr. 請便；開始吧；去做吧", extension: "【補充片語】" },
-    { vocab: "be rich in", kk: "", pos: "phr.", definition: "phr. 富含……", extension: "【補充片語】" },
-    { vocab: "Technology", kk: "[tɛk`nɑlədʒi]", pos: "n.", definition: "n. 科技、技術", extension: "【補充單字】" },
-    { vocab: "Supply", kk: "[sə`plaɪ]", pos: "n./v.", definition: "n. 供給、供應", extension: "【補充單字】" },
-    { vocab: "Transport", kk: "[`trænspɔrt]", pos: "n./v.", definition: "n. 運輸、交通工具", extension: "【補充單字】" },
-    { vocab: "System", kk: "[`sɪstəm]", pos: "n.", definition: "n. 系統", extension: "【補充單字】" }
+    { vocab: "thoughtful", kk: "[`θɔtfəl]", pos: "adj.", definition: "adj. 體貼的；考慮周到的", extension: "【個人需求補充單字】" },
+    { vocab: "soft", kk: "[sɔft]", pos: "adj.", definition: "adj. 軟的、柔和的", extension: "【個人需求補充單字】" },
+    { vocab: "flavor", kk: "[`flevɚ]", pos: "n.", definition: "n. 風味、味道", extension: "【個人需求補充單字】" },
+    { vocab: "gently", kk: "[`dʒɛntli]", pos: "adv.", definition: "adv. 輕輕地、溫和地", extension: "【個人需求補充單字】" },
+    { vocab: "beloved", kk: "[bɪ`lʌvəd]", pos: "adj.", definition: "adj. 深受喜愛的；心愛的", extension: "【個人需求補充單字】" },
+    { vocab: "definitely", kk: "[`dɛfənɪtli]", pos: "adv.", definition: "adv. 確實；肯定、當然", extension: "【個人需求補充單字】" },
+    { vocab: "Technology", kk: "[tɛk`nɑlədʒi]", pos: "n.", definition: "n. 科技、技術", extension: "【個人需求補充單字】" },
+    { vocab: "Supply", kk: "[sə`plaɪ]", pos: "n./v.", definition: "n. 供給、供應", extension: "【個人需求補充單字】" },
+    { vocab: "Transport", kk: "[`trænspɔrt]", pos: "n./v.", definition: "n. 運輸、交通工具", extension: "【個人需求補充單字】" },
+    { vocab: "System", kk: "[`sɪstəm]", pos: "n.", definition: "n. 系統", extension: "【個人需求補充單字】" }
 ];
 
 
@@ -268,32 +269,31 @@ const magazine10w101WordsData = [
 
 // ==================== Unit 11 ====================
 const magazine10w11WordsData = [
-    { vocab: "represent", kk: "[ˌrɛprɪ`zɛnt]", pos: "v.", definition: "v. 代表；象徵", extension: "【例句】<br>• The colors on the flag represent different values of the country." },
-    { vocab: "meanwhile", kk: "[`minˌwaɪl]", pos: "adv.", definition: "adv. 同時；在此期間", extension: "【例句】<br>• I was cooking dinner; meanwhile, my brother was setting the table." },
-    { vocab: "excellence", kk: "[`ɛksələns]", pos: "n.", definition: "n. 卓越、傑出", extension: "【例句】<br>• Isabel's work showed true excellence." },
-    { vocab: "visible", kk: "[`vɪzəbəl]", pos: "adj.", definition: "adj. 看得見的；清楚可見的", extension: "【例句】<br>• The stars were clearly visible in the night sky." },
+    { vocab: "toward", kk: "[tɔrd]", pos: "prep.", definition: "prep. 朝向、向", extension: "Let's walk toward the beach soon" },
     { vocab: "courage", kk: "[`kɝɪdʒ]", pos: "n.", definition: "n. 勇氣、膽量（不可數）", extension: "【例句】<br>• Ella needed courage to try out a new haircut." },
     { vocab: "classic", kk: "[`klæsɪk]", pos: "n.", definition: "n. 經典作品、名著", extension: "【例句】<br>• This novel is a classic that everyone should read." },
     { vocab: "bar", kk: "[bɑr]", pos: "n.", definition: "n. 條狀物；塊", extension: "【例句】<br>• There are dried fruits and nuts in the chocolate bar." },
-    { vocab: "firework", kk: "[`faɪrˌwɝk]", pos: "n.", definition: "n. 煙火、煙火表演", extension: "【例句】<br>• A fireworks show will be held by the river next month." }
+    { vocab: "firework", kk: "[`faɪrˌwɝk]", pos: "n.", definition: "n. 煙火、煙火表演", extension: "【例句】<br>• A fireworks show will be held by the river next month." },
+
+    { vocab: "incredible", kk: "[ɪn`krɛdəbḷ]", pos: "adj.", definition: "adj. 驚人的、極好的、令人難以置信的、不可思議的", extension: "【字彙小筆記】" },
+    { vocab: "fearsome", kk: "[`fɪrsəm]", pos: "adj.", definition: "adj. 可怕的", extension: "【字彙小筆記】" },
+    { vocab: "theme", kk: "[θim]", pos: "n.", definition: "n. 主題", extension: "【字彙小筆記】" },
+    { vocab: "look out", kk: "", pos: ".", definition: "(片語) 當心、留意", extension: "【Info Box】" },
+    { vocab: "cap off", kk: "]", pos: ".", definition: "(片語) 使...圓滿結束、為...畫下句點", extension: "【Info Box】" }
 ];
 
-
 const magazine10w111WordsData = [
-    { vocab: "ride", kk: "[raɪd]", pos: "n.", definition: "n. 遊樂設施", extension: "【補充單字】" },
-    { vocab: "character", kk: "[`kærɪktɚ]", pos: "n.", definition: "n. 角色", extension: "【補充單字】" },
-    { vocab: "toward", kk: "[tɔrd]", pos: "prep.", definition: "prep. 朝向、向", extension: "【補充單字】" },
-    { vocab: "incredible", kk: "[ɪn`krɛdəbḷ]", pos: "adj.", definition: "adj. 驚人的、不可思議的", extension: "【補充單字】" },
-    { vocab: "fearsome", kk: "[`fɪrsəm]", pos: "adj.", definition: "adj. 可怕的", extension: "【補充單字】" },
-    { vocab: "dragon", kk: "[`dræɡən]", pos: "n.", definition: "n. 巨龍", extension: "【補充單字】" },
-    { vocab: "courage", kk: "[`kɝɪdʒ]", pos: "n.", definition: "n. 勇氣", extension: "【補充單字】" },
-    { vocab: "attraction", kk: "[ə`trækʃən]", pos: "n.", definition: "n. 景點、吸引人之處", extension: "【補充單字】" },
-    { vocab: "classic", kk: "[`klæsɪk]", pos: "n.", definition: "n. 名著、經典", extension: "【補充單字】" },
-    { vocab: "Thunder", kk: "[`θʌndɚ]", pos: "n.", definition: "n. 雷", extension: "【補充單字】" },
-    { vocab: "theme", kk: "[θim]", pos: "n.", definition: "n. 主題", extension: "【補充單字】" },
-    { vocab: "bar", kk: "[bɑr]", pos: "n.", definition: "n. 塊、條狀物", extension: "【補充單字】" },
-    { vocab: "fireworks", kk: "[`faɪrˌwɝks]", pos: "n.", definition: "n. 煙火", extension: "【補充單字】" },
-    { vocab: "truly", kk: "[`trulɪ]", pos: "adv.", definition: "adv. 確實、真正地", extension: "【補充單字】" }
+    { vocab: "ride", kk: "[raɪd]", pos: "n.", definition: "n. 遊樂設施", extension: "【個人需求補充單字】" },
+    { vocab: "character", kk: "[`kærɪktɚ]", pos: "n.", definition: "n. 角色", extension: "【個人需求補充單字】" },
+    { vocab: "dragon", kk: "[`dræɡən]", pos: "n.", definition: "n. 巨龍", extension: "【個人需求補充單字】" },
+    { vocab: "courage", kk: "[`kɝɪdʒ]", pos: "n.", definition: "n. 勇氣", extension: "【個人需求補充單字】" },
+    { vocab: "attraction", kk: "[ə`trækʃən]", pos: "n.", definition: "n. 景點、吸引人之處", extension: "【個人需求補充單字】" },
+    { vocab: "Thunder", kk: "[`θʌndɚ]", pos: "n.", definition: "n. 雷", extension: "【個人需求補充單字】" },
+    { vocab: "pirate", kk: "[]", pos: "n.", definition: "n. 海盜", extension: "【個人需求補充單字】" },
+    { vocab: "bar", kk: "[bɑr]", pos: "n.", definition: "n. 塊、條狀物", extension: "【個人需求補充單字】" },
+    { vocab: "fireworks", kk: "[`faɪrˌwɝks]", pos: "n.", definition: "n. 煙火", extension: "【個人需求補充單字】" },
+    { vocab: "truly", kk: "[`trulɪ]", pos: "adv.", definition: "adv. 確實、真正地", extension: "【個人需求補充單字】This is a truly wonderful way to cap off a long day at one of the world's best theme parks." }
+        
 ];
 
 
@@ -307,7 +307,11 @@ const magazine10w12WordsData = [
     { vocab: "sweat", kk: "[swɛt]", definition: "n. 汗水；v. 流汗", extension: "【例句】<br>• Diego's shirt was wet with sweat after he ran in the heat." },
     { vocab: "promote", kk: "[prə`mot]", definition: "v. 促進、提倡、推廣", extension: "【例句】<br>• The school wants to promote saving water." },
     { vocab: "unity", kk: "[`junəti]", definition: "n. 團結；團結一致", extension: "【例句】<br>• The team showed unity during the difficult game." },
-    { vocab: "plastic", kk: "[`plæstɪk]", definition: "n. 塑膠；adj. 塑膠製的", extension: "【例句】<br>• We should limit the use of single-use plastic." }
+    { vocab: "plastic", kk: "[`plæstɪk]", definition: "n. 塑膠；adj. 塑膠製的", extension: "【例句】<br>• We should limit the use of single-use plastic." },
+    { vocab: "represent", kk: "[ˌrɛprɪ`zɛnt]", pos: "v.", definition: "v. 代表；象徵", extension: "【例句】<br>• The colors on the flag represent different values of the country." },
+    { vocab: "meanwhile", kk: "[`minˌwaɪl]", pos: "adv.", definition: "adv. 同時；在此期間", extension: "【例句】<br>• I was cooking dinner; meanwhile, my brother was setting the table." },
+    { vocab: "excellence", kk: "[`ɛksələns]", pos: "n.", definition: "n. 卓越、傑出", extension: "【例句】<br>• Isabel's work showed true excellence." },
+    { vocab: "visible", kk: "[`vɪzəbəl]", pos: "adj.", definition: "adj. 看得見的；清楚可見的", extension: "【例句】<br>• The stars were clearly visible in the night sky." }
 ];
 
 // ==================== Unit 13 ====================
@@ -355,26 +359,26 @@ const allData = [
 ];
 
 
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
-            //  { vocab: "", definition: "v. ", extension: "【個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
+            //  { vocab: "", definition: "v. ", extension: "【個人需求個人需求補充單字】" },
