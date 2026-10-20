@@ -325,6 +325,54 @@ const unit7WordsData = [
     { vocab: "steal", kk: "[stil]", pos: "vt.", definition: "偷竊", extension: " 動詞三態 steal-stole-stolen " }
 ];
 
+const unit8WordsData = [
+    { vocab: "protection", kk: "[prəˋtɛkʃən]", pos: "n.", definition: "保護", extension: "【相關詞】<br>protect vt. 保護；防禦<br>protective a. 保護的<br>Jack was wearing a heavy coat as protection against the cold.<br>這些小貓跑去找母貓尋求保護。" },
+    { vocab: "stormy", kk: "[ˋstɔrmɪ]", pos: "a.", definition: "暴風雨的；激烈的", extension: "【相關詞】<br>storm n. 暴風雨 & vi. & vt. 怒罵；攻占<br>vehement a. 激烈的<br>We had a blackout during the stormy night.<br>經過一番激烈的爭論我們終於達成了協議。" },
+    { vocab: "pure", kk: "[pjʊr]", pos: "a.", definition: "純粹的；純潔的", extension: "【相關詞】<br>pure silk 純絲<br>pure cotton 純棉<br>purify vt. 淨化<br>purity n. 純淨<br>The pajamas are made of pure cotton.<br>這水質清潔而純淨，它是經過一再測試的。" },
+    { vocab: "native", kk: "[ˋnetɪv]", pos: "a. & n.", definition: "祖國的；本地的，土生的 ＆ 本地人；原住民", extension: "【相關詞】<br>sb's native language / tongue 某人的母語<br>be native to + 地方 為某地方所獨有<br>indigenous a. 土生的，土長的<br>Chinese is Ken's native language, but he is more fluent in Spanish.<br>鷸鴕是紐西蘭的原產。<br>The natives were required to relocate to a safer area." },
+    { vocab: "cattle", kk: "[ˋkæt!]", pos: "n.", definition: "牛群", extension: "【相關詞】<br>In New Zealand, there are more than 13,000 sheep and cattle farms.<br>紐西蘭有 1 萬 3 千多座飼養綿羊和牛群的農場。" },
+    { vocab: "bull", kk: "[bʊl]", pos: "n.", definition: "公牛", extension: "【相關詞】<br>cow n. 母牛<br>During the festival, many bulls will run through the narrow streets in the city." },
+    { vocab: "buffalo", kk: "[ˋbʌfə͵lo]", pos: "n.", definition: "野牛；水牛", extension: "【相關詞】<br>= water buffalo<br>buffalo 或 buffaloes<br>The American buffalo is one of the largest land animals in North America." },
+    { vocab: "lord", kk: "[lɔrd]", pos: "n.", definition: "貴族；君主；(大寫) 上帝", extension: "【相關詞】<br>pledge vt. 誓言，保證<br>A knight should pledge loyalty to his lord.<br>騎士應該向他的君主效忠。<br>If you feel lost, let the Lord guide you." },
+    { vocab: "shadow", kk: "[ˋʃædo]", pos: "n. & vt.", definition: "陰影 ＆ 以影籠罩", extension: "【相關詞】<br>cast a shadow on... 投影在……之上<br>live in sb's shadow 活在某人的陰影／光環之下<br>shade n. 陰涼處，(樹) 蔭；窗／卷簾 & vt. 遮擋 & vi. 逐漸改變<br>Winnie sat in the shadows.<br>這間小屋被棕櫚樹的陰影遮蔽著。" },
+    { vocab: "advertise", kk: "[ˋædvɚ͵taɪz]", pos: "vt. & vi.", definition: "將……登廣告 ＆ 登廣告", extension: "【相關詞】<br>advertise for sb 登廣告徵人" },
+    { vocab: "advertiser", kk: "[ˋædvɚ͵taɪzɚ]", pos: "n.", definition: "刊登廣告者；廣告商", extension: "【相關詞】<br>Super Bowl advertisers have to pay lots of money for their commercial time." },
+    { vocab: "advertisement", kk: "[ˋædvɚtɪzmənt]", pos: "n.", definition: "廣告", extension: "【相關詞】<br>常縮寫成 ad<br>put / place an advertisement in the newspaper 在報上刊登廣告<br>advertising n. 廣告；廣告業<br>No one replied to the advertisement Mary put in the paper." },
+    { vocab: "liberty", kk: "[ˋlɪbɚtɪ]", pos: "n.", definition: "自由", extension: "【相關詞】<br>liberal a. 自由的；開明的<br>liberate vt. 解放，使自由<br>the Statue of Liberty 自由女神像<br>Give me liberty, or give me death!" },
+    { vocab: "confuse", kk: "[kənˋfjuz]", pos: "vt.", definition: "使困惑；混淆，弄錯", extension: "【相關詞】<br>confuse A with B 將 A 與 B 混淆<br>get confused 搞迷糊了<br>Please slow down—you are confusing me.<br>我們老師有時候會把翰幹當作是李。<br>蘇菲看到這標籤就搞不清楚了。" },
+    { vocab: "suspect", kk: "[səˋspɛkt]", pos: "vt.", definition: "懷疑；猜想", extension: "【相關詞】<br>suspect sb of + N/V-ing 懷疑某人犯了……之罪<br>be suspected of + N/V-ing 涉嫌……<br>The police suspected Bob of the crime.<br>泰德涉嫌偷了瑪莉的手錶。" },
+    { vocab: "suspect", kk: "[ˋsʌspɛkt]", pos: "n. & a.", definition: "嫌疑犯 ＆ 可疑的", extension: "【相關詞】<br>Robert was one of the main suspects in the murder case.<br>一件可疑的包裹被送到部長辦公室。" },
+    { vocab: "suspicion", kk: "[səˋspɪʃən]", pos: "n.", definition: "嫌疑；疑心", extension: "【相關詞】<br>be under suspicion 遭受懷疑<br>suspicious a. 可疑的；多疑的，猜疑的<br>Daniel is under suspicion by the police for robbery.<br>我懷疑班就在這附近的某個地方。" },
+    { vocab: "beneath", kk: "[bɪˋniθ]", pos: "prep. & adv.", definition: "在……正下方", extension: "【相關詞】<br>underneath prep. & adv. 在……下方<br>below prep. & adv. 在下方<br>above prep. & adv. 在上方<br>The money was hidden beneath a stack of newspapers.<br>在不起眼的外表下，湯姆其實個很有才氣的鋼琴家。" },
+    { vocab: "onto", kk: "[ˋɑntʊ]", pos: "prep.", definition: "到／向……之上", extension: "【相關詞】<br>The chef squeezed some lemon juice onto the fish to bring out its flavor." },
+    { vocab: "comfort", kk: "[ˋkʌmfɚt]", pos: "n. & vt.", definition: "舒適 ＆ 安慰", extension: "【相關詞】<br>find / take comfort in + N/V-ing 在……中尋找安慰<br>comfortable a. 舒適的<br>discomfort n. 不適 & vt. 使不舒適<br>Despite all the material comforts, the rich man isn't happy.<br>每當我心煩就會在聽音樂中找到慰藉。<br>這位婦女的孩子在車禍中喪生，我們便安慰她。" },
+    { vocab: "comparison", kk: "[kəmˋpærəsn]", pos: "n.", definition: "相較；相比", extension: "【相關詞】<br>in comparison with... 與……相較<br>compare vt. & vi. 比較<br>comparable a. 可相比的<br>comparative a. 比較的，相對的<br>A comparison of the two teams indicates that the game should be close.<br>與我那舊摩托車比起來，新的跑得真是快。" },
+    { vocab: "chest", kk: "[tʃɛst]", pos: "n.", definition: "胸", extension: "【相關詞】<br>get something off one's chest 把心中的某事一吐為快<br>Don't keep the secret to yourself. You should tell me and get it off your chest." },
+    { vocab: "breast", kk: "[brɛst]", pos: "n.", definition: "胸部；乳房", extension: "【相關詞】<br>abreast adv. 並排<br>Breast cancer can be cured if detected early." },
+    { vocab: "scale", kk: "[skel]", pos: "n.", definition: "規模；等級；磅秤", extension: "【相關詞】<br>on a... scale ……規模的<br>Pollution has caused changes to weather patterns on a large scale.<br>我們應該先做小規模的測試，再做較大型的實驗。<br>核武造成大規模的破壞。<br>磅秤測出包裹的重量。" },
+    { vocab: "conscious", kk: "[ˋkɑnʃəs]", pos: "a.", definition: "有所察覺的；清醒的", extension: "【相關詞】<br>be conscious of... 察覺到…… = be aware of...<br>Conscious of the dangers of smoking, Benny decided to give up the bad habit.<br>這士兵受了傷，但仍然清醒。" },
+    { vocab: "consciousness", kk: "[ˋkɑnʃəsnɪs]", pos: "n.", definition: "知覺；了解，知道", extension: "【相關詞】<br>regain consciousness 恢復意識<br>awareness n. 察覺；意識<br>conscience n. 良心<br>這個病人經過治療後不久就恢復了意識。<br>我知道他的痛苦遭遇後，就有一股伸出援手的衝動。" },
+    { vocab: "troop", kk: "[trup]", pos: "n.", definition: "軍隊 (恆用複數)", extension: "【相關詞】<br>The commander gave his troops a pep talk to boost their morale.<br>指揮官對他的部隊做精神喊話以提振他們的士氣。<br>a pep talk 精神喊話，鼓舞士氣的談話<br>morale n. 士氣" },
+    { vocab: "cricket", kk: "[ˋkrɪkɪt]", pos: "n.", definition: "蟋蟀；板球 (運動)", extension: "【相關詞】<br>Do you hear a cricket? It's keeping me awake.<br>咱們今天下午去公園板球吧。" },
+    { vocab: "grasshopper", kk: "[ˋgræs͵hæpɚ]", pos: "n.", definition: "蚱蜢", extension: "【相關詞】<br>Did you know that a grasshopper can leap 20 times the length of its own body?" },
+    { vocab: "fairly", kk: "[ˋfɛrlɪ]", pos: "adv.", definition: "相當地，蠻", extension: "【相關詞】<br>fair a. 公平的；相當多的 & n. 市集 & adv. 遵守規定地<br>fairy n. 妖精，仙子<br>quite adv. 相當<br>rather adv. 相當<br>It's fairly difficult to tell the difference between Sandy and her twin sister." },
+    { vocab: "substance", kk: "[ˋsʌbstəns]", pos: "n.", definition: "物質", extension: "【相關詞】<br>substantial a. 相當大的；重大的<br>This colorless, odorless substance is actually quite toxic.<br>這種無色無味的物質事實上有劇毒。<br>odorless a. 無氣味的<br>toxic a. 有毒的" },
+    { vocab: "pour", kk: "[pɔr]", pos: "vt. & vi.", definition: "傾注；下大雨", extension: "【相關詞】<br>Please pour water into the jug and place it on the table.<br>請把水倒到罐子裡，然後把罐子放在桌上。<br>jug n. 罐子 (多指裝水的玻璃或塑膠罐)<br>It's pouring now. You may as well stay here for the night.<br>每次下雨，就會下傾盆大雨。／禍不單行。<br>may as well + V 不妨……，倒不如……" },
+    { vocab: "promote", kk: "[prəˋmot]", pos: "vt.", definition: "促進，提倡；升遷", extension: "【相關詞】<br>promote peace 提倡和平<br>promote sales 促銷<br>be promoted to + 職位 獲得升任……一職<br>promotion n. 促進；提倡；升遷<br>Our company promotes education by offering scholarships to the poor.<br>彼得上星期晉升總經理一職。" },
+    { vocab: "pad", kk: "[pæd]", pos: "n. & vt.", definition: "襯墊 ＆ (用柔軟物質) 填塞", extension: "【相關詞】<br>pad, padded, padded<br>a mouse pad 滑鼠墊<br>There is a pad on every corner of the table so that you won't get hurt if you bump into one.<br>桌角都有安全護墊，所以如果你撞到其中之一都不會受傷。<br>這枕頭使用鴨毛填塞來增加柔軟度。" },
+    { vocab: "cinema", kk: "[ˋsɪnəmə]", pos: "n.", definition: "電影院", extension: "【相關詞】<br>go to the cinema (英) 看電影 = go to the movies (美)<br>movie theater n. 電影院 (美)<br>They are building a cinema in our town.<br>我工作太久了。今晚我來看場電影調適一下。" },
+    { vocab: "clay", kk: "[kle]", pos: "n.", definition: "黏土", extension: "【相關詞】<br>My daughter made me a flower with clay." },
+    { vocab: "fence", kk: "[fɛns]", pos: "vt. & n.", definition: "圍起來 ＆ 籬笆，柵欄", extension: "【相關詞】<br>fence... in 用籬笆／柵欄將……圍起來<br>The farmer fenced in all his cattle.<br>那個農夫把他的牛都圍了起來。<br>我想要住在有白色籬笆的房子鋰。" },
+    { vocab: "garage", kk: "[gəˋrɑʒ]", pos: "n.", definition: "車庫；汽車修理廠", extension: "【相關詞】<br>a garage sale 在自家車庫舉辦的家中舊貨拍賣會<br>My garage can only accommodate one car.<br>我的車庫只容得下一輛車。<br>我的車在修理廠，所以必須騎摩托車。" },
+    { vocab: "fuel", kk: "[ˋfjʊəl]", pos: "n. & vt. & vi.", definition: "燃料 ＆ 填加燃料 ＆ 激起 (憤怒等)", extension: "【相關詞】<br>add fuel to the fire 火上加油<br>fuel up (給汽車等) 加油<br>fuel sb's anger 激起某人的憤怒<br>biofuel n. 生質／生物燃料，生質能 (從植物或其廢棄物製成的燃料)<br>Your criticism will only add fuel to the fire.<br>我們的油快用完了，因此我們得在下個加油站加油。<br>別再說了！你的話只会激起保羅的憤怒。" },
+    { vocab: "decorate", kk: "[ˋdɛkə͵ret]", pos: "vt.", definition: "裝飾", extension: "【相關詞】<br>decorate A with B 用 B 布置 A<br>be decorated with... 被……裝飾著<br>decoration n. 裝飾 (不可數)；裝飾品 (可數)<br>Ken decorated his bedroom with his favorite band's posters.<br>肯用他最喜歡的樂團的海報布置他的房間。<br>這張小桌子以玫瑰花裝飾著。" },
+    { vocab: "decrease", kk: "[dɪˋkris] & [ˋdikris]", pos: "vt. & vi. ＆ n.", definition: "減少 ＆ 下降，減少", extension: "【相關詞】<br>be on the decrease / decline 下降中／減少 = be decreasing<br>increase vt. 增加 & n. 增加<br>be on the increase 增加中 = be increasing<br>Mary's fear decreased as she calmed down.<br>公司已裁減了員工人數。<br>近年來臺灣的出生率都在下降。<br>自從新政策開始執行後，失業率已降低了。" },
+    { vocab: "emotional", kk: "[ɪˋmoʃənəl]", pos: "a.", definition: "感情激動的；情緒的", extension: "【相關詞】<br>emotional quotient 情緒商數，情商 (縮寫為 EQ)<br>My mom became emotional upon reading the card I sent her.<br>我媽看了我寄給她的卡片深受感動。<br>A person with a high EQ usually gets along with other people well.<br>情商高的人通常都和別人處得很好。" },
+    { vocab: "lick", kk: "[lɪk]", pos: "vt. & n.", definition: "舔", extension: "【相關詞】<br>suck vt. & vi. 吸<br>chew vt. 咀嚼<br>swallow vt. 吞<br>My dog jumped onto the sofa and licked my face.<br>我的狗狗跳到沙發上並舔了我的臉。<br>Sammy wants to have a lick of my ice cream.<br>珊米想要舔一口我的冰淇淋。" },
+    { vocab: "nest", kk: "[nɛst]", pos: "n.", definition: "巢，窩", extension: "【相關詞】<br>There's a bird's nest in the tree.<br>樹上有個鳥巢。" },
+    { vocab: "element", kk: "[ˋɛləmənt]", pos: "n.", definition: "要素", extension: "【相關詞】<br>elemental a. 基本的<br>elementary a. 基的 & an elementary school 小學<br>The book has all the elements of a good suspense novel.<br>這本書具備所有懸疑小說的成功要素。" }
+];
+
 // 如果 7000 單字專區也需要像 LiveABC 一樣的總測驗合併陣列，可直接使用：
 const allData = [
     // ...unit1WordsData,
@@ -332,5 +380,7 @@ const allData = [
     // ...unit3WordsData,
     // ...unit4WordsData,
     // ...unit5WordsData,
-    ...unit6WordsData
+    ...unit6WordsData,
+    ...unit7WordsData,
+    ...unit8WordsData
 ];
