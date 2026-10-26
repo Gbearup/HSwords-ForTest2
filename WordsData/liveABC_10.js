@@ -89,22 +89,21 @@ const magazine10w1WordsData = [
 
 // ==================== Unit 5 ====================
 const magazine10w5WordsData = [
-    { vocab: "immediately", kk: "[ɪ`midiətli]", definition: "adv. 立刻、立即地", extension: "【例句】<br>• Lena left immediately after she finished work." },
+    // { vocab: "immediately", kk: "[ɪ`midiətli]", definition: "adv. 立刻、立即地", extension: "【例句】<br>• Lena left immediately after she finished work." },
     { vocab: "debate", kk: "[dɪ`bet]", definition: "v., n. 討論、辯論", extension: "【例句】<br>• We debated the idea for over an hour." },
     { vocab: "flavor", kk: "[`flevɚ]", definition: "n. 味道、風味、口味；v. 給……調味", extension: "【例句】<br>• This ice cream has a rich chocolate flavor." },
     { vocab: "specific", kk: "[spɪ`sɪfɪk]", definition: "adj. 特定的、特有的；明確的", extension: "【例句】<br>• Judy has a specific reason for choosing that school." },
     { vocab: "process", kk: "[`prɑˌsɛs]", definition: "v. 處理、解讀、理解、加工；n. 過程", extension: "【例句】<br>• The computer can process information quickly." },
     { vocab: "reaction", kk: "[ri`ækʃən]", definition: "n. 反應；回應", extension: "【例句】<br>• What was your reaction when you heard the news?" },
     { vocab: "stretch", kk: "[strɛtʃ]", definition: "v. 延續、追溯；伸展肢體", extension: "【例句】<br>• The history of Italy stretches back thousands of years." },
-    { vocab: "spread", kk: "[sprɛd]", definition: "v. 傳播、擴散、蔓延", extension: "【例句】<br>• Early explorers spread ideas and foods across the world." }
+    { vocab: "spread", kk: "[sprɛd]", definition: "v. 傳播、擴散、蔓延", extension: "【例句】<br>• Early explorers spread ideas and foods across the world." },
+    { vocab: "product", kk: "[`prɑdəkt]", definition: "n. 產品", extension: "【例句】<br>• This store sells higher quality products than that one." },
+    { vocab: "release", kk: "[rɪ`lis]", definition: "v., n. 推出、發行／釋放", extension: "【例句】<br>• The company released a new smartphone last month." },
+    { vocab: "chain", kk: "[tʃen]", definition: "n. 連鎖店；連鎖企業", extension: "【例句】<br>• There are many different chain coffee shops in the city." }
 ];
 
 // ==================== Unit 6 ====================
 const magazine10w6WordsData = [
-    { vocab: "product", kk: "[`prɑdəkt]", definition: "n. 產品", extension: "【例句】<br>• This store sells higher quality products than that one." },
-    { vocab: "release", kk: "[rɪ`lis]", definition: "v., n. 推出、發行／釋放", extension: "【例句】<br>• The company released a new smartphone last month." },
-    { vocab: "chain", kk: "[tʃen]", definition: "n. 連鎖店；連鎖企業", extension: "【例句】<br>• There are many different chain coffee shops in the city." },
-    { vocab: "award", kk: "[ə`wɔrd]", definition: "n. 獎項", extension: "【例句】<br>• Julie received an award for her science project." },
     { vocab: "come across", kk: "", definition: "phr. 偶然遇到；看見；無意發現", extension: "【例句】<br>• Ed came across a useful source for articles online." },
     { vocab: "come across as", kk: "", definition: "phr. 表現出……的樣子；給人……的印象；讓人覺得……", extension: "【例句】<br>• My cat comes across as shy, but she is actually friendly." },
     { vocab: "start out as", kk: "", definition: "phr. 起初的身分、狀態是……", extension: "【例句】<br>• The popular app started out as a school project." },
@@ -113,6 +112,7 @@ const magazine10w6WordsData = [
 
 // ==================== Unit 7 ====================
 const magazine10w7WordsData = [
+    { vocab: "award", kk: "[ə`wɔrd]", definition: "n. 獎項", extension: "【例句】<br>• Julie received an award for her science project." },
     { vocab: "quit", kk: "[kwɪt]", definition: "v. 放棄、退出；辭職", extension: "【例句】<br>• The team quit the game after the first half." },
     { vocab: "bomb", kk: "[bɑm]", definition: "n. 炸彈", extension: "【例句】<br>• The police and the army safely removed the bomb." },
     { vocab: "stadium", kk: "[`stediəm]", definition: "n. （露天）體育館、體育場", extension: "【例句】<br>• We watched the football match in the big stadium." },
@@ -120,12 +120,12 @@ const magazine10w7WordsData = [
     { vocab: "admit", kk: "[əd`mɪt]", definition: "v. 承認；坦言", extension: "【例句】<br>• I must admit that I was wrong about the answer." },
     { vocab: "creative", kk: "[kri`etɪv]", definition: "adj. 創作的；有創意的", extension: "【例句】<br>• Alexander is very creative and loves designing clothes." },
     { vocab: "focus", kk: "[`fokəs]", definition: "n. 重點；焦點", extension: "【例句】<br>• Fixing the rest of my essay is my main focus this week." },
-    { vocab: "bold", kk: "[bold]", definition: "adj. 大膽的；勇敢的（強調有魄力、不畏風險）", extension: "【例句】<br>• It was a bold move to open our own coffee shop." }
+    { vocab: "bold", kk: "[bold]", definition: "adj. 大膽的；勇敢的（強調有魄力、不畏風險）", extension: "【例句】<br>• It was a bold move to open our own coffee shop." },
+    { vocab: "daring", kk: "[`dɛrɪŋ]", definition: "adj. 大膽創新的；勇於冒險的", extension: "【例句】<br>• After a daring climb, Sam reached the top of the mountain." }
 ];
 
 // ==================== Unit 8 ====================
 const magazine10w8WordsData = [
-    // { vocab: "daring", kk: "[`dɛrɪŋ]", definition: "adj. 大膽創新的；勇於冒險的", extension: "【例句】<br>• After a daring climb, Sam reached the top of the mountain." },
     { vocab: "monster", kk: "[`mɑnstɚ]", pos: "n.", definition: "n. 怪物、怪獸", extension: "【例句】<br>• Oliver drew a monster with big teeth." },
     { vocab: "frightening", kk: "[`fraɪtṇɪŋ]", pos: "adj.", definition: "adj. 令人害怕的；駭人的", extension: "【例句】<br>• The storm was loud and frightening." },
     { vocab: "flash", kk: "[flæʃ]", definition: "v. （使）閃爍（燈光）；（使）閃耀", pos: "v.", extension: "【例句】<br>• The camera flashed when Jude took a picture." },
