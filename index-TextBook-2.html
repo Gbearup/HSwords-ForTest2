@@ -87,7 +87,7 @@ function getDataByLessonId(lessonId) {
                 const sId = unit.shortId;
 
                 // 產生頂部按鈕
-                tabsHtml += `<button class="lesson-btn ${isActiveTab}" onclick="switchLesson('${unit.id}')">📚 ${unit.name}</button>`;
+                tabsHtml += `<button class="lesson-btn ${isActiveTab}" onclick="switchLesson('${unit.id}', this)">📚 ${unit.name}</button>`;
 
                 // 產生對應的單字列表與測驗介面（完全對齊 quiz-engine.js 所需的 ID）
                 contentsHtml += `
@@ -150,7 +150,7 @@ function getDataByLessonId(lessonId) {
             });
 
             // 總測驗
-            tabsHtml += `<button class="lesson-btn" onclick="switchLesson('all')">🌟 總測驗</button>`;
+            tabsHtml += `<button class="lesson-btn" onclick="switchLesson('all', this)">🌟 總測驗</button>`;
             contentsHtml += `
                 <div id="all-container" class="lesson-content">
                     <div class="nav-tabs">
