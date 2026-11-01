@@ -187,8 +187,59 @@
     { vocab: "task", kk: "[tæsk]", "pos": "n.", definition: "n. 任務", extension: "【補充單字】" },
     { vocab: "such", kk: "[sʌtʃ]", "pos": "adj.", definition: "adj. 這樣的", extension: "【補充單字】" },
     { vocab: "continue", kk: "[kənˈtɪnju]", "pos": "v.", definition: "v. 繼續", extension: "【補充單字】" } 
-    
+  ];
+
+    const lesson5Data = [
+    { vocab: "plastic", kk: "[`plæstɪk]", pos: "adj. & n.", definition: "塑膠(製)的 & 塑膠", extension: "【例句】<br>• You should never put hot drinking water into plastic bottles or cups.<br>（你絕不應該把熱飲用水裝進塑膠瓶或塑膠杯中。）<br>• In the old days, many toys were made of wood or metal, but now most of them are made of plastic.<br>（過去很多玩具都是用木頭或金屬製成的，但現在大部分都是用塑膠製成的。）" },
+    { vocab: "convenience", kk: "[kən`vinjəns]", pos: "n.", definition: "便利", extension: "【例句】<br>• Many shops post their business hours on their Facebook pages for the convenience of the public.<br>（為了大眾的便利，許多店家會將營業時間張貼在他們的臉書專頁上。）" },
+    { vocab: "eagerly", kk: "[`igəlɪ]", pos: "adv.", definition: "渴望地", extension: "【例句】<br>• Rick is eagerly waiting for his boss to post the summer work schedule because he wants to plan his vacation.<br>（瑞克正急切地等待老闆公布暑期工作班表，因為他想規劃假期。）<br>【相關詞】<br>eager a. 渴望的（例句：After John sent the romantic email to his girlfriend, he was eager for her reply. 約翰寄出浪漫的電子郵件給女朋友後，他一直渴望著她的回覆。）" },
+    { vocab: "eager", kk: "[`igɚ]", pos: "a.", definition: "渴望的", extension: "【例句】<br>• After John sent the romantic email to his girlfriend, he was eager for her reply.<br>（約翰寄出浪漫的電子郵件給女朋友後，他一直渴望著她的回覆。）" },
+    { vocab: "surround", kk: "[sə`raʊnd]", pos: "vt. & n.", definition: "圍繞 & 環境", extension: "【例句】<br>• The house is surrounded by tall trees, so nobody can see it from the road.<br>（這棟房子四周環繞著高大的樹木，所以從路上沒有人看得到它。）<br>【相關詞】<br>surroundings n. pl. 環境（例句：The hotel is in beautiful natural surroundings far away from the city. 這間飯店位於遠離城市的優美自然環境中。）" },
+    { vocab: "surroundings", kk: "[sə`raʊndɪŋz]", pos: "n.", definition: "環境", extension: "【例句】<br>• The hotel is in beautiful natural surroundings far away from the city.<br>（這間飯店位於遠離城市的優美自然環境中。）" },
+    { vocab: "drift", kk: "[drɪft]", pos: "vi.", definition: "漂流", extension: "【例句】<br>• After the captain fell asleep, the ship passed the harbor and then drifted toward the middle of the sea.<br>（船長睡著後，船隻駛過港口，接著向海中央漂去。）" },
+    { vocab: "envy", kk: "[`ɛnvɪ]", pos: "vt. & n.", definition: "羨慕", extension: "【例句】<br>• Christopher really envies his best friend, Patty, because she has been to so many countries.<br>（克里斯多福真的很羨慕他的好朋友佩蒂，因為她去過那麼多國家。）<br>• Kyle looked with envy at his friend's smartphone since it was much newer and better than his.<br>（凱爾羨慕地看著朋友的智慧型手機，因為它比他的還要新、還要好。）" },
+    { vocab: "crowded", kk: "[`kraʊdɪd]", pos: "a.", definition: "擠滿的；擁擠的", extension: "【例句】<br>• The Smith family is moving into a new house tomorrow, so their living room is crowded with boxes.<br>（史密斯一家明天要搬進新家，所以他們的客廳擠滿了箱子。）<br>【相關詞】<br>crowd n. [C] 人群（例句：The singer performed her three newest songs in front of a crowd of excited fans. 這位歌手在滿場興奮的歌迷面前表演了她最新的三首歌。）" },
+    { vocab: "crowd", kk: "[kraʊd]", pos: "n.", definition: "人群", extension: "【例句】<br>• The singer performed her three newest songs in front of a crowd of excited fans.<br>（這位歌手在滿場興奮的歌迷面前表演了她最新的三首歌。）" },
+    { vocab: "obviously", kk: "[`ɑbvɪəslɪ]", pos: "adv.", definition: "顯然", extension: "【例句】<br>• The little girl is wearing yellow shoes, a yellow dress, and has painted her nails yellow. Obviously, she likes this color.<br>（這個小女孩穿著黃鞋、黃洋裝，還把指甲塗成黃色。顯然她很喜歡這個顏色。）<br>【相關詞】<br>obvious a. 明顯的（例句：It was quite obvious to Carrie's friends that she was in love with Mike... 凱莉的朋友們很明顯看出她愛上了麥克……）" },
+    { vocab: "obvious", kk: "[`ɑbvɪəs]", pos: "a.", definition: "明顯的", extension: "【例句】<br>• It was quite obvious to Carrie's friends that she was in love with Mike because she couldn't stop talking about him.<br>（凱莉的朋友們很明顯看出她愛上了麥克，因為她一直不停談論他。）" },
+    { vocab: "product", kk: "[`prɑdʌkt]", pos: "n.", definition: "產品", extension: "【例句】<br>• This shop sells a variety of health and food products for babies.<br>（這家店販售各種嬰兒保健與食品。）<br>【相關詞】<br>produce vt. 製造；生產（例句：This company produces more computers than any other company in the world. 這家公司生產的電腦比世上任何其他公司都多。）<br>production n. [U] 製造（例句：Taiwan is known for the production of high-quality bicycles... 台灣以生產高品質自行車而聞名……）" },
+    { vocab: "produce", kk: "[prə`dus]", pos: "vt.", definition: "製造；生產", extension: "【例句】<br>• This company produces more computers than any other company in the world.<br>（這家公司生產的電腦比世上任何其他公司都多。）" },
+    { vocab: "production", kk: "[prə`dʌkʃən]", pos: "n.", definition: "製造", extension: "【例句】<br>• Taiwan is known for the production of high-quality bicycles like those that are made by Giant.<br>（台灣以生產如捷安特所製造的高品質自行車而聞名。）" },
+    { vocab: "consume", kk: "[kən`sum]", pos: "vt.", definition: "吃喝；消耗", extension: "【例句】<br>• Driving after you consume too much beer or wine can lead to a car crash.<br>（喝了太多啤酒或葡萄酒後開車可能會導致車禍。）<br>• Finishing his assignments consumes most of Riley's free time in the evening and on the weekend.<br>（完成作業占用了萊利在晚上和週末的大部分空閒時間。）<br>【相關詞】<br>consumer n. 消費者（例句：The study found that our city is the largest consumer of water in the country.）" },
+    { vocab: "consumer", kk: "[kən`sumɚ]", pos: "n.", definition: "消費者", extension: "【例句】<br>• The study found that our city is the largest consumer of water in the country.<br>（該研究發現，我們城市是國內最大的用水戶。）" },
+    { vocab: "poisonous", kk: "[`pɔɪzənəs]", pos: "a.", definition: "有毒的", extension: "【例句】<br>• Chocolate is delicious for most people, but did you know that it can be poisonous to dogs?<br>（對大多數人來說巧克力很美味，但你知道它對狗狗有毒嗎？）<br>【相關詞】<br>poison vt. 毒害 & n. 毒藥（例句：Andy tried to poison the cockroaches... 安迪試著用他在店裡買的化學藥劑毒死公寓裡的蟑螂…… / The rock star almost died after he took poison by mistake... 這位搖滾巨星誤服毒藥後差點喪命……）" },
+    { vocab: "poison", kk: "[`pɔɪzn]", pos: "vt. & n.", definition: "毒害 & 毒藥；毒素", extension: "【例句】<br>• Andy tried to poison the cockroaches in his apartment with a chemical he bought at the store, but it didn't work.<br>（安迪試著用他在店裡買的化學藥劑毒死公寓裡的蟑螂，但沒用。）<br>• The rock star almost died after he took poison by mistake; he thought it was a soft drink.<br>（這位搖滾巨星誤服毒藥後差點喪命；他以為那是軟性飲料。）" },
+    { vocab: "substance", kk: "[`sʌbstəns]", pos: "n.", definition: "物質", extension: "【例句】<br>• The police found a chemical substance at the murder scene and are doing tests on it right now.<br>（警方在謀殺現場發現了一種化學物質，目前正進行檢驗。）" },
+    { vocab: "recycling", kk: "[ri`saɪklɪŋ]", pos: "n.", definition: "回收", extension: "【例句】<br>• After the party, Nick took all the empty bottles out for recycling.<br>（派對結束後，尼克把所有空瓶拿出去回收。）<br>【相關詞】<br>recycle vt. 回收（例句：Many people don't realize that about 75% of the waste they produce can be recycled. 很多人不知道他們產生的垃圾中約有 75% 可以回收。）" },
+    { vocab: "recycle", kk: "[ri`saɪkl]", pos: "vt.", definition: "回收", extension: "【例句】<br>• Many people don't realize that about 75% of the waste they produce can be recycled.<br>（很多人不知道他們產生的垃圾中約有 75% 可以回收。）" },
+    { vocab: "harm", kk: "[hɑrm]", pos: "n. & vt.", definition: "傷害", extension: "【例句】<br>• The cleaners were careful not to do any harm to the objects in the museum as they cleaned around them.<br>（清潔人員在館內打掃時很小心，以免對館內物品造成任何損害。）<br>• Rebecca put the puppy down carefully in order not to harm it.<br>（蕾貝卡小心翼翼地把小狗放下，以免傷害到它。）<br>【相關詞】<br>harmful a. 有害的（例句：Looking at the sun for too long is harmful to your eyes. 看太陽太久對眼睛有害。）" },
+    { vocab: "harmful", kk: "[`hɑrmfəl]", pos: "a.", definition: "有害的", extension: "【例句】<br>• Looking at the sun for too long is harmful to your eyes.<br>（看太陽太久對眼睛有害。）" },
+    { vocab: "environment", kk: "[ɪn`vaɪrənmənt]", pos: "n.", definition: "自然環境；環境", extension: "【例句】<br>• It is every person's responsibility to save the earth's natural environment for our sons and daughters.<br>• All company owners should create a safe working environment for their employees.<br>• Environment plays a key role in the way humans develop and learn new things.<br>【相關詞】<br>environmental a. 自然環境的（例句：The president's speech to the students will focus on environmental problems... 總統對學生的演講將聚焦於環境問題……）" },
+    { vocab: "environmental", kk: "[ɪn͵vaɪrən`mɛntəl]", pos: "a.", definition: "自然環境的", extension: "【例句】<br>• The president's speech to the students will focus on environmental problems such as shrinking forests and climate change.<br>（總統對學生的演講將聚焦於環境問題，例如森林縮減與氣候變遷。）" },
+    { vocab: "properly", kk: "[`prɑpɚlɪ]", pos: "adv.", definition: "適當地", extension: "【例句】<br>• Marc didn't complete the assignment properly, so the teacher asked him to do it again.<br>（馬克作業沒寫好，所以老師要求他重寫。）<br>【相關詞】<br>proper a. 適當的" },
+    { vocab: "proper", kk: "[`prɑpɚ]", pos: "a.", definition: "適當的", extension: "【例句】<br>• Silly jokes should only be told at the proper place and time.<br>（愚蠢的笑話只能在適當的地點和時間講。）" },
+    { vocab: "come along", kk: "", pos: "v. phr.", definition: "到達；出現", extension: "【例句】<br>• Jane said she's not ready to join us yet, but she will come along later.<br>（珍說她還沒準備好加入我們，不過她稍後會到。）" },
+    { vocab: "pack up", kk: "", pos: "v. phr.", definition: "收拾；打包", extension: "【例句】<br>• After Mr. Huang got fired, he sadly packed all of his things up and left.<br>（黃先生被開除後，難過地把所有東西打包離開。）" },
+    { vocab: "on one's own", kk: "", pos: "prep. phr.", definition: "獨自；靠自己", extension: "【例句】<br>• Lily loves to go fishing on her own, so she can listen to the sound of the sea.<br>（莉莉喜歡獨自去釣魚，這樣她就能聽見海浪聲。）" },
+    { vocab: "for a while", kk: "", pos: "prep. phr.", definition: "一陣子", extension: "【例句】<br>• The lion hid behind a tree for a while, waiting for a deer to walk by.<br>（獅子在一棵樹後躲了一陣子，等待鹿走過去。）" },
+    { vocab: "end up", kk: "", pos: "v. phr.", definition: "最後結果是", extension: "【例句】<br>• The family couldn't agree on a restaurant to go to, so they ended up staying home and eating pizza.<br>（這家人對要去哪家餐廳意見分歧，所以最後結果是待在家裡吃披薩。）" },
+    { vocab: "howl", kk: "[haʊl]", pos: "vi.", definition: "（風）呼嘯；狂嗓", extension: "【字彙辨識】" },
+    { vocab: "current", kk: "[`kɝənt]", pos: "n.", definition: "水流", extension: "【字彙辨識】" },
+    { vocab: "tunnel", kk: "[`tʌnl]", pos: "n.", definition: "隧道", extension: "【字彙辨識】" },
+    { vocab: "chamber", kk: "[`tʃembɚ]", pos: "n.", definition: "腔室", extension: "【字彙辨識】" },
+    { vocab: "swallow", kk: "[`swɑlo]", pos: "vt.", definition: "吞咽", extension: "【字彙辨識】" },
+    { vocab: "nutritious", kk: "[nu`trɪʃəs]", pos: "a.", definition: "營養的", extension: "【字彙辨識】" },
+    { vocab: "decompose", kk: "[͵dikəm`poz]", pos: "vi.", definition: "分解", extension: "【字彙辨識】" },
+    { vocab: "tongs", kk: "[`tɑŋz]", pos: "n.", definition: "夾具", extension: "【字彙辨識】" },
+    { vocab: "pinch", kk: "[pɪntʃ]", pos: "n.", definition: "捏；擰", extension: "【字彙辨識】" },
+    { vocab: "littering", kk: "[`lɪtərɪŋ]", pos: "n.", definition: "亂丟垃圾", extension: "【字彙辨識】" },
+    { vocab: "recycling plant", kk: "[ri`saɪklɪŋ plænt]", pos: "n.", definition: "回收場", extension: "【字彙辨識】" },
+    { vocab: "misuse", kk: "[mɪs`juz]", pos: "vt.", definition: "錯誤使用", extension: "【字彙辨識】" }
 ];
+
+
+
+
 
         // 總測驗資料（自動合併 1~3 課與 Review 1）
         const allData = [
@@ -196,6 +247,7 @@
             // ...lesson2Data, 
             // ...lesson3Data, 
             // ...review1Data,
-            ...lesson4Data
+            ...lesson4Data,
+            ...lesson5Data
         
         ];
