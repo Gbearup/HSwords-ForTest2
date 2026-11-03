@@ -95,14 +95,43 @@ function speak(text) {
     }
 }
 
-// 渲染單字卡
+// 渲染單字卡（恢復原狀：僅單字有發音，例句僅文字顯示）
+// function renderWords(lessonId, words) {
+//     const grid = document.getElementById(lessonId + '-wordGrid');
+//     if (!grid) return;
+//     grid.innerHTML = '';
+//     words.forEach(item => {
+//         const card = document.createElement('div');
+//         card.className = 'word-card';
+//         card.innerHTML = `
+//             <div>
+//                 <div class="word-header">
+//                     <div>
+//                         <span class="word-title">${item.vocab}</span>
+//                         ${item.pos ? `<span style="font-size:0.85rem; color:var(--btn-blue); margin-left:6px; font-weight:600;">${item.pos}</span>` : ''}
+//                         <span style="font-size:0.85rem; color:var(--text-sub); margin-left:6px;">${item.kk || ''}</span>
+//                     </div>
+//                     <button class="speech-btn" onclick="speak('${item.vocab}')" title="朗讀">🔊</button>
+//                 </div>
+//                 <div class="word-def">${item.definition}</div>
+//             </div>
+//             ${item.extension ? `<div class="word-ext">💡 ${item.extension}</div>` : ''}
+//         `;
+//         grid.appendChild(card);
+//     });
+// }
+
+
 function renderWords(lessonId, words) {
     const grid = document.getElementById(lessonId + '-wordGrid');
     if (!grid) return;
+
     grid.innerHTML = '';
+
     words.forEach(item => {
         const card = document.createElement('div');
         card.className = 'word-card';
+
         card.innerHTML = `
             <div>
                 <div class="word-header">
@@ -111,15 +140,72 @@ function renderWords(lessonId, words) {
                         ${item.pos ? `<span style="font-size:0.85rem; color:var(--btn-blue); margin-left:6px; font-weight:600;">${item.pos}</span>` : ''}
                         <span style="font-size:0.85rem; color:var(--text-sub); margin-left:6px;">${item.kk || ''}</span>
                     </div>
-                    <button class="speech-btn" onclick="speak('${item.vocab}')" title="朗讀">🔊</button>
+                    <button class="speech-btn word-speech" title="朗讀">🔊</button>
                 </div>
                 <div class="word-def">${item.definition}</div>
             </div>
             ${item.extension ? `<div class="word-ext">💡 ${item.extension}</div>` : ''}
         `;
+
+        // 單字發音：保留原本功能
+        card.querySelector('.word-speech').addEventListener('click', () => {
+            speak(item.vocab);
+        });
+
+        // 逐一尋找英文例句
+        const def = card.querySelector('.word-def');
+
+        const walker = document.createTreeWalker(
+            def,
+            NodeFilter.SHOW_TEXT
+        );
+
+        const nodes = [];
+        while (walker.nextNode()) {
+            nodes.push(walker.currentNode);
+        }
+
+        nodes.forEach(node => {
+            const text = node.textContent;
+
+            // 辨識以句號、問號或驚嘆號結尾的英文句子
+            const match = text.match(/^(\s*•\s*)([A-Za-z][A-Za-z0-9\s,'";:!?()\-]+[.!?])(\s*)$/);
+
+            if (!match) return;
+
+            const english = match[2];
+
+            const wrapper = document.createElement('span');
+            wrapper.style.display = 'inline-flex';
+            wrapper.style.alignItems = 'center';
+            wrapper.style.gap = '5px';
+
+            const sentence = document.createElement('span');
+            sentence.textContent = match[1] + english;
+
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'speech-btn';
+            button.textContent = '🔊';
+            button.title = '朗讀英文例句';
+
+            button.addEventListener('click', function() {
+                speak(english);
+            });
+
+            wrapper.appendChild(sentence);
+            wrapper.appendChild(button);
+
+            node.parentNode.replaceChild(wrapper, node);
+        });
+
         grid.appendChild(card);
     });
 }
+
+
+
+
 
 // 搜尋過濾（依賴外部的 getDataByLessonId）
 function filterWords(lessonId) {
