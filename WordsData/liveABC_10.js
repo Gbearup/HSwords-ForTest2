@@ -300,44 +300,55 @@ const magazine10w111WordsData = [
 
 // ==================== Unit 12 ====================
 const magazine10w12WordsData = [
-    { vocab: "security", kk: "[sɪ`kjʊrəti]", definition: "n. 安全、保護措施", extension: "【例句】<br>• The building has strict security checks at the entrance." },
-    { vocab: "shiny", kk: "[`ʃaɪni]", definition: "adj. 閃亮的", extension: "【例句】<br>• The wooden floor became shiny after it was washed." },
-    { vocab: "leisure", kk: "[`liʒɚ]", definition: "n. 閒暇、空閒時間", extension: "【例句】<br>• Lily enjoys drawing in her leisure time." },
-    { vocab: "anxious", kk: "[`æŋkʃəs]", definition: "adj. 焦慮不安的、擔心的", extension: "【例句】<br>• Lucas was anxious about meeting new people." },
-    { vocab: "sweat", kk: "[swɛt]", definition: "n. 汗水；v. 流汗", extension: "【例句】<br>• Diego's shirt was wet with sweat after he ran in the heat." },
-    { vocab: "promote", kk: "[prə`mot]", definition: "v. 促進、提倡、推廣", extension: "【例句】<br>• The school wants to promote saving water." },
-    { vocab: "unity", kk: "[`junəti]", definition: "n. 團結；團結一致", extension: "【例句】<br>• The team showed unity during the difficult game." },
-    { vocab: "plastic", kk: "[`plæstɪk]", definition: "n. 塑膠；adj. 塑膠製的", extension: "【例句】<br>• We should limit the use of single-use plastic." },
-    { vocab: "represent", kk: "[ˌrɛprɪ`zɛnt]", pos: "v.", definition: "v. 代表；象徵", extension: "【例句】<br>• The colors on the flag represent different values of the country." },
+   { vocab: "represent", kk: "[ˌrɛprɪ`zɛnt]", pos: "v.", definition: "v. 代表；象徵", extension: "【例句】<br>• The colors on the flag represent different values of the country." },
     { vocab: "meanwhile", kk: "[`minˌwaɪl]", pos: "adv.", definition: "adv. 同時；在此期間", extension: "【例句】<br>• I was cooking dinner; meanwhile, my brother was setting the table." },
     { vocab: "excellence", kk: "[`ɛksələns]", pos: "n.", definition: "n. 卓越、傑出", extension: "【例句】<br>• Isabel's work showed true excellence." },
-    { vocab: "visible", kk: "[`vɪzəbəl]", pos: "adj.", definition: "adj. 看得見的；清楚可見的", extension: "【例句】<br>• The stars were clearly visible in the night sky." }
+    { vocab: "visible", kk: "[`vɪzəbəl]", pos: "adj.", definition: "adj. 看得見的；清楚可見的", extension: "【例句】<br>• The stars were clearly visible in the night sky." },
+    { vocab: "sweat", kk: "[swɛt]", pos: "n./v.", definition: "n. 汗水 v. 流汗（動詞三態同形）", extension: "【例句】<br>• Diego's shirt was wet with sweat after he ran in the heat." },
+    { vocab: "banknote", kk: "[`bæŋkˌnot]", pos: "n.", definition: "n. 紙鈔、鈔票", extension: "【字彙小筆記】" },
+    { vocab: "note", kk: "[not]", pos: "n.", definition: "n. 紙鈔、鈔票（英式用法，美語則用 bill）", extension: "【字彙小筆記】" },
+    { vocab: "sloth", kk: "[sloθ]", pos: "n.", definition: "n. 樹懶", extension: "【字彙小筆記】" },
+    { vocab: "vertical", kk: "[`vɝtɪkəl]", pos: "adj.", definition: "adj. 直立式的；垂直的；縱向的", extension: "【字彙小筆記】" },
+    { vocab: "toil", kk: "[`tɔɪl]", pos: "n.", definition: "n. 辛勞、艱苦工作", extension: "【字彙小筆記】" },
+    { vocab: "promote", kk: "[prə`mot]", pos: "v.", definition: "v. 促進、提倡、推廣", extension: "【例句】<br>• The school wants to promote saving water." },
+    { vocab: "unity", kk: "[`junəti]", pos: "n.", definition: "n. 團結；團結一致", extension: "【例句】<br>• The team showed unity during the difficult game." },
+    { vocab: "plastic", kk: "[`plæstɪk]", pos: "n./adj.", definition: "n. 塑膠（材料、製品） adj. 塑膠製的", extension: "【例句】<br>• We should limit the use of single-use plastic." },
+    { vocab: "security", kk: "[sɪ`kjʊrəti]", pos: "n.", definition: "n. 安全、保護措施（security feature 指「安全設計；防偽特徵」）", extension: "【例句】<br>• The building has strict security checks at the entrance." },
+    { vocab: "shiny", kk: "[`ʃaɪni]", pos: "adj.", definition: "adj. 閃亮的（shiny strips 直譯為「閃亮條帶」，即「光彩防偽線；金屬反光條」）", extension: "【例句】<br>• The wooden floor became shiny after it was washed." },
+    { vocab: "fictional", kk: "[`fɪkʃənəl]", pos: "adj.", definition: "adj. 虛構的；並非真實存在的", extension: "【字彙小筆記】" },
+    { vocab: "polymer", kk: "[`pɑləmɚ]", pos: "n.", definition: "n. 聚合物", extension: "【字彙小筆記】" },
+    { vocab: "counterfeiter", kk: "[`kaʊntɚˌfaɪtɚ]", pos: "n.", definition: "n. 偽鈔製造者；偽造者", extension: "【字彙小筆記】" },
+    { vocab: "hologram", kk: "[`hɑləˌɡræm]", pos: "n.", definition: "n. 全像圖；雷射防偽圖案；全像投影", extension: "【字彙小筆記】" }
 ];
-
 // ==================== Unit 13 ====================
 const magazine10w13WordsData = [
-    { vocab: "task", kk: "[tæsk]", definition: "n. 任務；工作", extension: "【例句】<br>• Sadie wrote down each task on her list." },
-    { vocab: "skip", kk: "[skɪp]", definition: "v. 不做（某事）；跳過、略過", extension: "【例句】<br>• Don't skip this step, or the cake may not turn out well." },
-    { vocab: "achievement", kk: "[ə`tʃivmənt]", definition: "n. 成就、成果（可數）；完成、實現（不可數）", extension: "【例句】<br>• Building the shelf by myself was an achievement." },
-    { vocab: "memory", kk: "[`mɛməri]", definition: "n. 記憶（力）；回憶", extension: "【例句】<br>• Arianna has a good memory for names." },
-    { vocab: "afterward", kk: "[`æftɚwɚd]", definition: "adv. 之後、後來", extension: "【例句】<br>• We played soccer and ate lunch afterward." },
-    { vocab: "passion", kk: "[`pæʃən]", definition: "n. 熱情；強烈興趣", extension: "【例句】<br>• Jack's passion is taking photos of nature." },
-    { vocab: "goal", kk: "[ɡol]", definition: "n. 目標、目的", extension: "【例句】<br>• Isaac's goal is to read one book every month." },
-    { vocab: "maintain", kk: "[mɛn`ten]", definition: "v. 維持、保持；維護、保養", extension: "【例句】<br>• The team worked hard to maintain its lead." }
+   { vocab: "leisure", kk: "[`liʒɚ]", pos: "n.", definition: "n. 閒暇；空間時間（可置於名詞前作修飾）", extension: "【例句】<br>• Lily enjoys drawing in her leisure time." },
+    { vocab: "anxious", kk: "[`æŋkʃəs]", pos: "adj.", definition: "adj. 焦慮不安的；擔心的", extension: "【例句】<br>• Lucas was anxious about meeting new people." },
+    { vocab: "afterward", kk: "[`æftɚwɚd]", pos: "adv.", definition: "adv. 之後、後來（亦可拼作 afterwards）", extension: "【例句】<br>• We played soccer and ate lunch afterward." },
+    { vocab: "passion", kk: "[`pæʃən]", pos: "n.", definition: "n. 熱情；強烈興趣", extension: "【例句】<br>• Jack's passion is taking photos of nature." },
+    { vocab: "confidence", kk: "[`kɑnfədəns]", pos: "n.", definition: "n. 信心、自信；信任", extension: "【字彙小筆記】" },
+    { vocab: "physical", kk: "[`fɪzɪkəl]", pos: "adj.", definition: "adj. 身體的；體力活動的", extension: "【字彙小筆記】" },
+    { vocab: "competition", kk: "[ˌkɑmpə`tɪʃən]", pos: "n.", definition: "n. 比賽、競賽；競爭", extension: "【字彙小筆記】" }
 ];
 
 // ==================== Unit 14 ====================
 const magazine10w14WordsData = [
-    { vocab: "further", kk: "[`fɝðɚ]", definition: "adv. 進一步地；更深入地", extension: "【例句】<br>• We can take this idea further tomorrow." },
-    { vocab: "brief", kk: "[brif]", definition: "adj. 簡短的；短暫的", extension: "【例句】<br>• Adam made a brief visit to his grandma." },
-    { vocab: "track", kk: "[træk]", definition: "v. 追蹤、記錄……的進展", extension: "【例句】<br>• Tracking your money can help you save." },
-    { vocab: "progress", kk: "[`prɑɡrəs]", definition: "n. 進展；進步", extension: "【例句】<br>• Rosalie felt proud of her progress." },
-    { vocab: "ahead of", kk: "", definition: "phr. 在……前面；領先……", extension: "【例句】<br>• Sophia walked ahead of me." },
-    { vocab: "other than", kk: "", definition: "phr. 除了……", extension: "【例句】<br>• Everyone came other than Tom." },
-    { vocab: "together with", kk: "", definition: "phr. 連同；與……一起", extension: "【例句】<br>• I sent the form together with my ID." },
-    { vocab: "try out", kk: "", definition: "phr. 試用", extension: "【例句】<br>• Hannah tried out the chair before buying it." }
+    { vocab: "goal", kk: "[ɡol]", pos: "n.", definition: "n. 目標、目的", extension: "【例句】<br>• Isaac's goal is to read one book every month." },
+    { vocab: "maintain", kk: "[mɛn`ten]", pos: "v.", definition: "v. 維持、保持；維護、保養", extension: "【例句】<br>• The team worked hard to maintain its lead." },
+    { vocab: "task", kk: "[tæsk]", pos: "n.", definition: "n. 任務；工作", extension: "【例句】<br>• Sadie wrote down each task on her list." },
+    { vocab: "skip", kk: "[skɪp]", pos: "v.", definition: "v. 不做（某事）；跳過、略過", extension: "【例句】<br>• Don't skip this step, or the cake may not turn out well." },
+    { vocab: "achievement", kk: "[ə`tʃivmənt]", pos: "n.", definition: "n. 成就、成果（可數）；完成、實現（不可數）", extension: "【例句】<br>• Building the shelf by myself was an achievement." },
+    { vocab: "motivation", kk: "[ˌmotə`veʃən]", pos: "n.", definition: "n. 動力、動機", extension: "【字彙小筆記】" },
+    { vocab: "self-discipline", kk: "[ˌsɛlf `dɪsəplɪn]", pos: "n.", definition: "n. 自律、自制力", extension: "【字彙小筆記】" },
+    { vocab: "memory", kk: "[`mɛməri]", pos: "n.", definition: "n. 記憶（力）；回憶", extension: "【例句】<br>• Arianna has a good memory for names." },
+    { vocab: "further", kk: "[`fɝðɚ]", pos: "adv.", definition: "adv. 進一步地；更深入地（take sth further 表示「將……進一步發展；使……更上一層樓」）", extension: "【例句】<br>• We can take this idea further tomorrow." },
+    { vocab: "brief", kk: "[brif]", pos: "adj.", definition: "adj. 簡短的；短暫的", extension: "【例句】<br>• Adam made a brief visit to his grandma." },
+    { vocab: "track", kk: "[træk]", pos: "v.", definition: "v. 追蹤、記錄……的進展", extension: "【例句】<br>• Tracking your money can help you save." },
+    { vocab: "progress", kk: "[`prɑɡrəs]", pos: "n.", definition: "n. 進展；進步", extension: "【例句】<br>• Rosalie felt proud of her progress." },
+    { vocab: "trigger", kk: "[`trɪɡɚ]", pos: "n./v.", definition: "n. 引發……的事物；誘因 v. 引發", extension: "【字彙小筆記】" },
+    { vocab: "adjust", kk: "[ə`dʒʌst]", pos: "v.", definition: "v. 調整、調節", extension: "【字彙小筆記】" }
 ];
-
+    
 
 
 // ==================== 總測驗合併陣列 ====================
