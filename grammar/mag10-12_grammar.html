@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>雜誌10月份第12單元 文法重點解析與單題測驗</title>
+    <title>第四週（第12-14單元）文法重點解析與單題測驗</title>
     <style>
         :root {
             --primary-color: #4a90e2;
@@ -25,7 +25,7 @@
         }
 
         .container {
-            max-width: 680px;
+            max-width: 760px;
             margin: 0 auto;
         }
 
@@ -38,7 +38,7 @@
             font-size: 1.6rem;
         }
 
-        /* 頂部頁籤 */
+        /* 頁籤導航 */
         .tab-nav {
             display: flex;
             justify-content: center;
@@ -83,6 +83,21 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* 單元標題 */
+        .unit-header {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            border-bottom: 2px dashed #cbd5e1;
+            padding-bottom: 6px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .unit-header:first-child {
+            margin-top: 0;
+        }
+
         /* 文法解析卡片 */
         .grammar-card {
             background: #eef5fc;
@@ -120,6 +135,38 @@
 
         .example-tw {
             color: #666;
+        }
+
+        .notice-box {
+            background-color: #fff5f5;
+            border: 1px solid #feb2b2;
+            border-radius: 6px;
+            padding: 10px 14px;
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: #c53030;
+        }
+
+        /* 對比表格 */
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            font-size: 0.95rem;
+        }
+
+        .compare-table th, .compare-table td {
+            border: 1px solid #cbd5e1;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .compare-table th {
+            background-color: #e2e8f0;
+            color: #1a5276;
         }
 
         /* 單題測驗卡片與控制 */
@@ -270,9 +317,9 @@
 <body>
 
 <div class="container">
-    <h1>第12單元學習中心</h1>
+    <h1>第四週 學習中心（第12-14單元）</h1>
 
-    <!-- 頂部切換按鈕 -->
+    <!-- 頂部頁籤 -->
     <div class="tab-nav">
         <button class="tab-btn active" onclick="switchTab('grammar', this)">📖 文法重點解析</button>
         <button class="tab-btn" onclick="switchTab('quiz', this)">✏️ 單題刷題測驗</button>
@@ -280,7 +327,9 @@
 
     <!-- 1. 文法解析 -->
     <div id="grammar-tab" class="tab-content active">
-        <h2 style="color: var(--primary-color); margin-top: 0;">關鍵解析 Language Notes</h2>
+        
+        <!-- 第 12 單元文法 -->
+        <div class="unit-header">📌 第 12 單元文法解析 (Language Notes)</div>
 
         <div class="grammar-card">
             <div class="grammar-title">1. come in 的意思與用法</div>
@@ -353,21 +402,202 @@
                 <div class="example-tw">屋裡的椅子都是木頭做的。</div>
             </div>
         </div>
+
+        <!-- 第 13 單元文法 -->
+        <div class="unit-header">📌 第 13 單元文法解析 (Language Notes)</div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">1. wh- + to V. 名詞片語</div>
+            <div>「<code>wh- 疑問詞 + to V.</code>」可構成名詞片語，通常是由 wh- 名詞子句簡化而來，在句中可作主詞、受詞或主詞補語。改寫成 wh- 名詞子句時，通常須依句意補上 <code>can</code>, <code>could</code>, <code>should</code>, <code>would</code> 等情態助動詞，或使用合適的一般動詞。</div>
+            <div class="example">
+                <div class="example-en">When to start is a difficult question. (作主詞)</div>
+                <div class="example-en">= When we should start is a difficult question.</div>
+                <div class="example-tw">我們應該什麼時候開始是個難題。</div>
+            </div>
+            <div class="example">
+                <div class="example-en">Sophie asked how to fix the problem. (作受詞)</div>
+                <div class="example-en">= Sophie asked how she could fix the problem.</div>
+                <div class="example-tw">蘇菲問她要如何解決這個問題。</div>
+            </div>
+            <div class="example">
+                <div class="example-en">My only concern is where to park the car. (作主詞補語)</div>
+                <div class="example-en">= My only concern is where I should park the car.</div>
+                <div class="example-tw">我唯一顧慮的是該把車停在哪裡。</div>
+            </div>
+            <div class="example">
+                <div class="example-en">Amy knows how to solve the equation.</div>
+                <div class="example-en">= Amy knows how she solves the equation.</div>
+                <div class="example-tw">艾咪知道她是如何解出這個方程式的。</div>
+            </div>
+            <div class="notice-box">
+                <strong>⚠️ 注意：</strong><code>why</code> 一般不能接 <code>to V.</code> 構成名詞片語，須使用名詞子句表示。<br>
+                ❌ Tell me why to trust him.<br>
+                ☑️ Tell me why I should trust him. (告訴我為什麼我應該信任他。)
+            </div>
+        </div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">2. go + 動名詞 (V-ing) 的用法</div>
+            <div><code>go + V-ing</code> 表示「去從事某項活動」，尤其常用於戶外休閒活動或運動，以及部分日常活動。</div>
+            <div class="example">
+                <div class="example-en">Micah went fishing this morning.</div>
+                <div class="example-tw">麥卡今天早上去釣魚。</div>
+            </div>
+            <div class="example">
+                <div class="example-en">Isabella goes shopping on Sundays.</div>
+                <div class="example-tw">伊莎貝拉每逢週日都會去購物。</div>
+            </div>
+        </div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">🏊 游泳名詞小辭典</div>
+            <ul class="usage-list" style="list-style-type: square;">
+                <li><strong>stroke</strong> [strok] n. 泳姿、游泳動作</li>
+                <li><strong>freestyle</strong> [ˈfriˌstaɪl] n. 自由式（亦可寫作 freestyle stroke）</li>
+                <li><strong>backstroke</strong> [ˈbækˌstrok] n. 仰式</li>
+            </ul>
+        </div>
+
+        <!-- 第 14 單元文法 -->
+        <div class="unit-header">📌 第 14 單元文法解析 (Language Notes)</div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">1. wh- 引導名詞子句的用法</div>
+            <div>wh- 疑問詞（who, whom, whose, what, which, when, where, why, how）可引導名詞子句，在句中作主詞、受詞或補語用。<strong>wh- 疑問詞後的詞語，排列順序和一般陳述句相同（主詞 + 動詞）</strong>。wh- 名詞子句作主詞時，要搭配單數動詞。</div>
+            <div class="example">
+                <div class="example-en">Why Olivia left is still not clear. (作主詞)</div>
+                <div class="example-tw">奧莉維亞為什麼離開尚不得而知。</div>
+            </div>
+            <div class="example">
+                <div class="example-en">Gabriel forgot when the meeting started. (作受詞)</div>
+                <div class="example-tw">加百列忘了會議是什麼時候開始的。</div>
+            </div>
+            <div class="example">
+                <div class="example-en">The problem is what we should do next. (作補語)</div>
+                <div class="example-tw">問題是我們接下來該怎麼做。</div>
+            </div>
+            <div class="notice-box" style="background-color: #f0f4f8; border-color: #4a90e2; color: #1a5276;">
+                💡 <strong>what 引導名詞子句時</strong>，相當於 <code>the thing(s) that</code>，表示「……的事物」。
+            </div>
+        </div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">2. 形容詞子句的限定與非限定用法</div>
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th>限定用法</th>
+                        <th>非限定用法</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            ❶ 先行詞為<strong>非特定</strong>的人、事、物，透過形容詞子句來限定對象。<br>
+                            ❷ 關係代名詞前面<strong>不加逗點</strong>，且可用 <strong>that</strong> 代替。
+                        </td>
+                        <td>
+                            ❶ 補充說明先行詞，先行詞為<strong>專有名詞</strong>、<strong>獨一無二</strong>的人、事、物。<br>
+                            ❷ 補充說明前面的<strong>整個子句</strong>。<br>
+                            ❸ 關係代名詞前須<strong>加上逗點</strong>，且<strong>不可用 that 代替</strong>。
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="notice-box">
+                <strong>注意關代選用：</strong><br>
+                ❶ 先行詞為人，關代作主格時用 <strong>who</strong>；作受格時用 <strong>whom</strong>（口語中常用 who 代替）。<br>
+                ❷ 先行詞為事物時，關係代名詞要用 <strong>which</strong>。
+            </div>
+            <div class="example">
+                <div class="example-en">Students who/that study hard usually do well.</div>
+                <div class="example-tw">用功讀書的學生通常表現不錯。（限定）</div>
+            </div>
+            <div class="example">
+                <div class="example-en">The boy whom/that we invited did not come.</div>
+                <div class="example-tw">我們邀請的那個人沒有來。（限定受格）</div>
+            </div>
+            <div class="example">
+                <div class="example-en">Ed likes movies which/that have happy endings.</div>
+                <div class="example-tw">艾德喜歡圓滿結局的電影。（限定事物）</div>
+            </div>
+            <div class="example">
+                <div class="example-en">Mr. Lin, who teaches English, is very patient.</div>
+                <div class="example-tw">林老師很有耐心，他是教英文的。（非限定補述人）</div>
+            </div>
+            <div class="example">
+                <div class="example-en">Emily forgot my birthday, which made me sad.</div>
+                <div class="example-tw">艾蜜莉忘了我的生日，這讓我很難過。（非限定補充前句）</div>
+            </div>
+        </div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">3. once 的用法</div>
+            <ul class="usage-list">
+                <li>
+                    <strong>作連接詞：</strong>表示「一……就……；一旦」，與 <code>as soon as</code> 意思相同。<br>
+                    句型：<code>Once S. + V., S. + V.</code> = <code>S. + V. once S. + V.</code>
+                    <div class="example">
+                        <div class="example-en">Once Luke gets home, he takes a shower.</div>
+                        <div class="example-en">= Luke takes a shower once he gets home.</div>
+                        <div class="example-tw">路克一回到家，就會去洗澡。</div>
+                    </div>
+                </li>
+                <li style="margin-top: 10px;">
+                    <strong>作副詞（表頻率）：</strong>指「一次；一回」。<br>
+                    常見結構：<code>once a + 單數時間名詞</code> / <code>once every + 複數時間名詞</code>
+                    <div class="example">
+                        <div class="example-en">Juliet goes to the library once a week.</div>
+                        <div class="example-tw">茱麗葉每週去圖書館一次。</div>
+                    </div>
+                    <div class="example">
+                        <div class="example-en">Holden exercises once every two days.</div>
+                        <div class="example-tw">霍登每兩天運動一次。</div>
+                    </div>
+                </li>
+                <li style="margin-top: 10px;">
+                    <strong>作副詞（表過去）：</strong>表示「曾經、以前」，通常放在一般動詞之前、be 動詞之後；若有助動詞，則放在助動詞之後。
+                    <div class="example">
+                        <div class="example-en">Teagan once worked at a bookstore.</div>
+                        <div class="example-tw">蒂根曾經在書店工作。</div>
+                    </div>
+                    <div class="example">
+                        <div class="example-en">Hudson and Alexa were once good friends.</div>
+                        <div class="example-tw">哈德遜和亞歷克莎曾經是好朋友。</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">4. go wrong 的用法</div>
+            <div><code>go</code> 在此作連綴動詞，表示「變成某種狀態」，之後接形容詞。<code>go wrong</code> 可指「（事情、計畫、情況等）出問題、出差錯、失敗」，亦可指「（人）做錯事、犯錯」。</div>
+            <div class="example">
+                <div class="example-en">The milk went bad.</div>
+                <div class="example-tw">牛奶壞掉了。（變質）</div>
+            </div>
+            <div class="example">
+                <div class="example-en">Something went wrong with the computer.</div>
+                <div class="example-tw">電腦出了問題。</div>
+            </div>
+            <div class="example">
+                <div class="example-en">George went wrong when he added the numbers.</div>
+                <div class="example-tw">喬治在加數字的時候算錯了。</div>
+            </div>
+        </div>
+
     </div>
 
-    <!-- 2. 單題卡片互動測驗 -->
+    <!-- 2. 單題刷題測驗 -->
     <div id="quiz-tab" class="tab-content">
-        <!-- 題目畫面 -->
         <div id="quiz-box">
             <div class="quiz-header">
-                <span class="progress-text" id="progress-text">第 1 / 5 題</span>
+                <span class="progress-text" id="progress-text">第 1 / 15 題</span>
             </div>
 
             <div class="question" id="question-text">題目載入中...</div>
 
-            <div class="options" id="options-box">
-                <!-- 動態注入選項按鈕 -->
-            </div>
+            <div class="options" id="options-box"></div>
 
             <div class="control-btns">
                 <button type="button" class="btn-action btn-check" id="btn-check" onclick="checkAnswer()">檢查答案</button>
@@ -381,7 +611,7 @@
         <div class="result-screen" id="result-screen">
             <h2>🎉 測驗完成！</h2>
             <div>您在第一次嘗試中的答對率：</div>
-            <div class="score-display" id="final-score">0 / 5</div>
+            <div class="score-display" id="final-score">0 / 15</div>
             <button type="button" class="btn-action btn-restart" onclick="restartQuiz()">重新測驗</button>
         </div>
     </div>
@@ -396,6 +626,7 @@
     }
 
     const quizData = [
+        // 第 12 單元題目 (1-4)
         {
             q: "1. This jacket ________ small, medium, and large.",
             opts: ["A. comes in", "B. comes out", "C. makes of", "D. no longer"],
@@ -407,7 +638,7 @@
             q: "2. Tom ________ works here; he found a new job last month.",
             opts: ["A. any longer", "B. no longer", "C. anymore", "D. aside from"],
             ans: 1,
-            hint: "💡 觀念提示：注意這個空格後面直接接一般動詞 works。要放動詞前面表示「不再」，且不需要 don't 的是哪一個？",
+            hint: "💡 觀念提示：注意空格後面直接接一般動詞 works。要放動詞前面表示「不再」，且不需要 don't 的是哪一個？",
             explain: "✅ 正確！no longer 置於一般動詞 works 前面。若要用 any longer 或 anymore 必須搭配 not。"
         },
         {
@@ -424,12 +655,84 @@
             hint: "💡 觀念提示：這題在考物品的「材質與原料」。這張餐桌是由實木（solid wood）製成的，該用哪個片語？",
             explain: "✅ 正確！be made of N. 表示由某原料製成（看的出原始材質）。"
         },
+        // 第 13 單元題目 (5-9)
         {
-            q: "5. We don't live in this town ________.",
-            opts: ["A. no longer", "B. any longer", "C. come in", "D. made of"],
+            q: "5. Can you show me ________ to operate this complex machine?",
+            opts: ["A. how", "B. why", "C. what to", "D. where is"],
+            ans: 0,
+            hint: "💡 觀念提示：句意為「你能教我『如何』操作這台機器嗎？」，使用「wh- 疑問詞 + to V.」的格式表示操作方法。",
+            explain: "✅ 正確！how to operate... 表示「如何操作……」，等於 how I can operate..."
+        },
+        {
+            q: "6. Please tell me ________ I should trust your promise.",
+            opts: ["A. why to", "B. why", "C. how to", "D. where to"],
             ans: 1,
-            hint: "💡 觀念提示：注意句頭已經有否定助動詞 don't (not) 了！not 加上放在句尾表示「不再」的字是哪一個？",
-            explain: "✅ 正確！句中有 don't，句尾要搭配 any longer (或 anymore) 組成 not ... any longer 表「不再」。"
+            hint: "💡 觀念提示：注意！why 不能接 to V.（不可寫 why to trust），必須接名詞子句「why + 主詞 + 動詞」！",
+            explain: "✅ 正確！why 不能形成「why + to V.」的結構，必須使用名詞子句 why I should trust..."
+        },
+        {
+            q: "7. My family decides to ________ camping near the lake this weekend.",
+            opts: ["A. go", "B. play", "C. do", "D. take"],
+            ans: 0,
+            hint: "💡 觀念提示：去從事戶外休閒活動或運動（如 camping, fishing, shopping），要搭配哪個動詞？",
+            explain: "✅ 正確！go + V-ing 表示「去從事某項活動」（go camping 表示去露營）。"
+        },
+        {
+            q: "8. The question of ________ to start the new project is still under discussion.",
+            opts: ["A. when", "B. why", "C. that", "D. which"],
+            ans: 0,
+            hint: "💡 觀念提示：句意為「什麼時候開始新專案的問題仍在討論中」，接在介系詞 of 後面作受詞，用 wh- + to V.。",
+            explain: "✅ 正確！when to start... 表示「何時開始……」，為 wh- + to V. 簡化的名詞片語。"
+        },
+        {
+            q: "9. Alex is very good at swimming; his favorite stroke is ________.",
+            opts: ["A. freestyle", "B. no longer", "C. come in", "D. aside from"],
+            ans: 0,
+            hint: "💡 觀念提示：Alex 最喜歡的「泳姿（stroke）」是哪一個？（單字小辭典：自由式/仰式）。",
+            explain: "✅ 正確！freestyle 意為「自由式」（也可寫作 freestyle stroke）。"
+        },
+        // 第 14 單元題目 (10-15)
+        {
+            q: "10. ________ Olivia left the party early is still a mystery to everyone.",
+            opts: ["A. Why", "B. Why to", "C. Which that", "D. What to"],
+            ans: 0,
+            hint: "💡 觀念提示：wh- 名詞子句放在句首作主詞，後面接完整句「Olivia left...」，注意語序是陳述句喔！",
+            explain: "✅ 正確！Why Olivia left... 為 wh- 名詞子句作主詞，搭配單數動詞 is。"
+        },
+        {
+            q: "11. Mr. Lin, ________ teaches us English, is always very patient with his students.",
+            opts: ["A. who", "B. that", "C. whom", "D. which"],
+            ans: 0,
+            hint: "💡 觀念提示：先行詞是「Mr. Lin」（專有名詞），前面有逗點（非限定用法）！非限定用法中『不可』使用哪一個關代？",
+            explain: "✅ 正確！Mr. Lin 為專有名詞，需用非限定用法（有逗點），且非限定用法中不可使用 that 代替 who。"
+        },
+        {
+            q: "12. Emily was very busy yesterday, ________ made her forget my birthday.",
+            opts: ["A. which", "B. that", "C. what", "D. it"],
+            ans: 0,
+            hint: "💡 觀念提示：前面有逗點，用來補充說明「前面整件事（Emily昨天很忙）」的關係代名詞要用哪一個？",
+            explain: "✅ 正確！which 前面加逗點，可以用來代表前面的「整件事」。"
+        },
+        {
+            q: "13. ________ Luke finishes his homework, he can play video games.",
+            opts: ["A. Once", "B. Once a", "C. Once every", "D. Go wrong"],
+            ans: 0,
+            hint: "💡 觀念提示：這題要選連接詞，表示「一……就……；一旦」，意思相當於 as soon as。",
+            explain: "✅ 正確！Once S. + V., S. + V. 為連接詞用法，表示「一旦 / 一……就……」。"
+        },
+        {
+            q: "14. My grandfather visits the clinic once ________ two weeks for a regular checkup.",
+            opts: ["A. every", "B. a", "C. inside", "D. on"],
+            ans: 0,
+            hint: "💡 觀念提示：表示頻率「每兩週一次」，複數時間名詞（two weeks）前面要搭配哪個字？",
+            explain: "✅ 正確！once every + 複數時間名詞（once every two days/weeks）表示「每隔……時間一次」。"
+        },
+        {
+            q: "15. Don't worry if something ________ with the system; the IT team will fix it.",
+            opts: ["A. goes wrong", "B. goes bad", "C. go wrong", "D. go to wrong"],
+            ans: 0,
+            hint: "💡 觀念提示：表示機器或系統「出問題、出差錯」，搭配連綴動詞 go，且單數主詞 something 要注意動詞單複數！",
+            explain: "✅ 正確！something went/goes wrong 表示「出問題、故障」。something 為單數代名詞，搭配第三人稱單數動詞 goes wrong。"
         }
     ];
 
