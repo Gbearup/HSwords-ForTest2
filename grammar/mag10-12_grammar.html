@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雜誌10月份第12單元 文法重點解析與單題測驗</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5a623;
+            --background-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --correct-color: #28a745;
+            --wrong-color: #dc3545;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Microsoft JhengHei";
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            font-size: 1.6rem;
+        }
+
+        /* 頂部頁籤 */
+        .tab-nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .tab-btn {
+            background-color: #e2e8f0;
+            color: #4a5568;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+        }
+
+        /* 頁籤內容容器 */
+        .tab-content {
+            display: none;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 文法解析卡片 */
+        .grammar-card {
+            background: #eef5fc;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .grammar-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a5276;
+            margin-bottom: 8px;
+        }
+
+        .usage-list {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        .example {
+            background-color: #ffffff;
+            border-radius: 6px;
+            padding: 8px 12px;
+            margin-top: 6px;
+            border: 1px solid #d6e4f0;
+            font-size: 0.95rem;
+        }
+
+        .example-en {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .example-tw {
+            color: #666;
+        }
+
+        /* 單題測驗卡片與控制 */
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #edf2f7;
+        }
+
+        .progress-text {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .question {
+            font-size: 1.15rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            min-height: 50px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .option-btn {
+            background-color: #f8f9fa;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px 15px;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .option-btn:hover:not(:disabled) {
+            background-color: #edf2f7;
+            border-color: #cbd5e1;
+        }
+
+        .option-btn.selected {
+            border-color: var(--primary-color);
+            background-color: #e7f1ff;
+        }
+
+        .option-btn.correct {
+            background-color: #d4edda !important;
+            border-color: var(--correct-color) !important;
+            color: #155724 !important;
+            font-weight: bold;
+        }
+
+        .option-btn.wrong {
+            background-color: #f8d7da !important;
+            border-color: var(--wrong-color) !important;
+            color: #721c24 !important;
+        }
+
+        .control-btns {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn-action {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-check {
+            background-color: var(--primary-color);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-check:hover {
+            background-color: #357abd;
+        }
+
+        .btn-next {
+            background-color: #2c3e50;
+            color: white;
+            display: none;
+            flex: 1;
+        }
+
+        .btn-next:hover {
+            background-color: #1a252f;
+        }
+
+        /* 提示與反饋訊息 */
+        .feedback-box {
+            margin-top: 15px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .feedback-box.hint {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            color: #856404;
+        }
+
+        .feedback-box.success {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            color: #155724;
+        }
+
+        .result-screen {
+            text-align: center;
+            display: none;
+            padding: 20px 0;
+        }
+
+        .score-display {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 15px 0;
+        }
+
+        .btn-restart {
+            background-color: var(--secondary-color);
+            color: white;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>第12單元學習中心</h1>
+
+    <!-- 頂部切換按鈕 -->
+    <div class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab('grammar', this)">📖 文法重點解析</button>
+        <button class="tab-btn" onclick="switchTab('quiz', this)">✏️ 單題刷題測驗</button>
+    </div>
+
+    <!-- 1. 文法解析 -->
+    <div id="grammar-tab" class="tab-content active">
+        <h2 style="color: var(--primary-color); margin-top: 0;">關鍵解析 Language Notes</h2>
+
+        <div class="grammar-card">
+            <div class="grammar-title">1. come in 的意思與用法</div>
+            <div>片語動詞 <code>come in</code> 作不及物動詞用：</div>
+            <ul class="usage-list">
+                <li>
+                    <strong>表示某商品「有（顏色、尺寸等）可供選擇」：</strong>
+                    <div class="example">
+                        <div class="example-en">These shoes come in black, brown, and green.</div>
+                        <div class="example-tw">這款鞋子有黑色、咖啡色和綠色可選擇。</div>
+                    </div>
+                </li>
+                <li style="margin-top: 8px;">
+                    <strong>表示「（商品）到貨」：</strong>
+                    <div class="example">
+                        <div class="example-en">The new phones will come in next week.</div>
+                        <div class="example-tw">新款手機將於下週到貨。</div>
+                    </div>
+                </li>
+                <li style="margin-top: 8px;">
+                    <strong>表示「獲得（名次）」：</strong>
+                    <div class="example">
+                        <div class="example-en">Vicky came in third (place) in the competition.</div>
+                        <div class="example-tw">薇琪在比賽中獲得第三名。</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">2. no longer 不再、已不</div>
+            <div>
+                置於一般動詞前、be 動詞後。等同於 <code>not ... any longer</code> 或 <code>not ... anymore</code>。
+            </div>
+            <div class="example">
+                <div class="example-en">We no longer use this old system in the office.</div>
+                <div class="example-tw">我們辦公室已經不再使用這個舊系統了。</div>
+            </div>
+            <div class="example">
+                <div class="example-en">We don't live in the house by the river any longer / anymore.</div>
+                <div class="example-tw">我們不再住在河邊的房子裡。</div>
+            </div>
+        </div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">3. aside from + N./V-ing 除了……之外</div>
+            <ul class="usage-list">
+                <li>
+                    <strong>表示「包含」（意同 besides）：</strong>
+                    <div class="example">
+                        <div class="example-en">Aside from English, Grace also wants to learn Italian.</div>
+                        <div class="example-tw">除了英文之外，葛雷絲也想學義大利文。</div>
+                    </div>
+                </li>
+                <li style="margin-top: 8px;">
+                    <strong>表示「排除」（意同 except for）：</strong>
+                    <div class="example">
+                        <div class="example-en">Aside from some minor mistakes, your essay is very good.</div>
+                        <div class="example-tw">除了一些小錯誤外，你的作文非常好。</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="grammar-card">
+            <div class="grammar-title">4. be made of N. 由……製成</div>
+            <div>用於成品仍看得出原始材質（物理變化）。</div>
+            <div class="example">
+                <div class="example-en">The chairs in the house are all made of wood.</div>
+                <div class="example-tw">屋裡的椅子都是木頭做的。</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. 單題卡片互動測驗 -->
+    <div id="quiz-tab" class="tab-content">
+        <!-- 題目畫面 -->
+        <div id="quiz-box">
+            <div class="quiz-header">
+                <span class="progress-text" id="progress-text">第 1 / 5 題</span>
+            </div>
+
+            <div class="question" id="question-text">題目載入中...</div>
+
+            <div class="options" id="options-box">
+                <!-- 動態注入選項按鈕 -->
+            </div>
+
+            <div class="control-btns">
+                <button type="button" class="btn-action btn-check" id="btn-check" onclick="checkAnswer()">檢查答案</button>
+                <button type="button" class="btn-action btn-next" id="btn-next" onclick="nextQuestion()">下一題 ➔</button>
+            </div>
+
+            <div class="feedback-box" id="feedback-box"></div>
+        </div>
+
+        <!-- 結算畫面 -->
+        <div class="result-screen" id="result-screen">
+            <h2>🎉 測驗完成！</h2>
+            <div>您在第一次嘗試中的答對率：</div>
+            <div class="score-display" id="final-score">0 / 5</div>
+            <button type="button" class="btn-action btn-restart" onclick="restartQuiz()">重新測驗</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchTab(tabName, btnElement) {
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById(tabName + '-tab').classList.add('active');
+        btnElement.classList.add('active');
+    }
+
+    const quizData = [
+        {
+            q: "1. This jacket ________ small, medium, and large.",
+            opts: ["A. comes in", "B. comes out", "C. makes of", "D. no longer"],
+            ans: 0,
+            hint: "💡 觀念提示：這題在考商品的「尺寸或顏色有供選擇」。想一下哪個片語後面常接 small, medium, large？",
+            explain: "✅ 正確！come in 在這裡表示商品「有（尺寸/顏色）可供選擇」。"
+        },
+        {
+            q: "2. Tom ________ works here; he found a new job last month.",
+            opts: ["A. any longer", "B. no longer", "C. anymore", "D. aside from"],
+            ans: 1,
+            hint: "💡 觀念提示：注意這個空格後面直接接一般動詞 works。要放動詞前面表示「不再」，且不需要 don't 的是哪一個？",
+            explain: "✅ 正確！no longer 置於一般動詞 works 前面。若要用 any longer 或 anymore 必須搭配 not。"
+        },
+        {
+            q: "3. ________ apples, she bought some oranges and bananas.",
+            opts: ["A. Except for", "B. Come in", "C. Aside from", "D. Made of"],
+            ans: 2,
+            hint: "💡 觀念提示：句子意思是「除了蘋果之外，她『還』買了橘子和香蕉」（包含）。選哪一個片語可以表示『除了……之外還有』？",
+            explain: "✅ 正確！Aside from 可表示「除了……之外（包含）」，等於 Besides。"
+        },
+        {
+            q: "4. The dining table is ________ solid wood.",
+            opts: ["A. made of", "B. come in", "C. no longer", "D. aside from"],
+            ans: 0,
+            hint: "💡 觀念提示：這題在考物品的「材質與原料」。這張餐桌是由實木（solid wood）製成的，該用哪個片語？",
+            explain: "✅ 正確！be made of N. 表示由某原料製成（看的出原始材質）。"
+        },
+        {
+            q: "5. We don't live in this town ________.",
+            opts: ["A. no longer", "B. any longer", "C. come in", "D. made of"],
+            ans: 1,
+            hint: "💡 觀念提示：注意句頭已經有否定助動詞 don't (not) 了！not 加上放在句尾表示「不再」的字是哪一個？",
+            explain: "✅ 正確！句中有 don't，句尾要搭配 any longer (或 anymore) 組成 not ... any longer 表「不再」。"
+        }
+    ];
+
+    let currentQ = 0;
+    let selectedOpt = -1;
+    let firstTryCorrect = 0;
+    let isFirstTry = true;
+
+    function renderQuestion() {
+        selectedOpt = -1;
+        isFirstTry = true;
+        const data = quizData[currentQ];
+
+        document.getElementById('progress-text').innerText = `第 ${currentQ + 1} / ${quizData.length} 題`;
+        document.getElementById('question-text').innerText = data.q;
+
+        const optionsBox = document.getElementById('options-box');
+        optionsBox.innerHTML = '';
+        data.opts.forEach((optText, idx) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'option-btn';
+            btn.innerText = optText;
+            btn.onclick = () => selectOption(idx, btn);
+            optionsBox.appendChild(btn);
+        });
+
+        document.getElementById('feedback-box').style.display = 'none';
+        document.getElementById('btn-check').style.display = 'block';
+        document.getElementById('btn-next').style.display = 'none';
+    }
+
+    function selectOption(idx, btnElement) {
+        document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+        btnElement.classList.add('selected');
+        selectedOpt = idx;
+    }
+
+    function checkAnswer() {
+        if (selectedOpt === -1) {
+            alert('請先點擊選擇一個答案！');
+            return;
+        }
+
+        const data = quizData[currentQ];
+        const fbBox = document.getElementById('feedback-box');
+        const buttons = document.querySelectorAll('.option-btn');
+
+        if (selectedOpt === data.ans) {
+            if (isFirstTry) firstTryCorrect++;
+
+            fbBox.className = "feedback-box success";
+            fbBox.innerHTML = data.explain;
+            fbBox.style.display = "block";
+
+            buttons.forEach((btn, idx) => {
+                btn.disabled = true;
+                btn.classList.remove('wrong', 'selected');
+                if (idx === data.ans) btn.classList.add('correct');
+            });
+
+            document.getElementById('btn-check').style.display = 'none';
+            document.getElementById('btn-next').style.display = 'block';
+        } else {
+            isFirstTry = false;
+            fbBox.className = "feedback-box hint";
+            fbBox.innerHTML = data.hint;
+            fbBox.style.display = "block";
+
+            buttons[selectedOpt].classList.add('wrong');
+        }
+    }
+
+    function nextQuestion() {
+        currentQ++;
+        if (currentQ < quizData.length) {
+            renderQuestion();
+        } else {
+            document.getElementById('quiz-box').style.display = 'none';
+            document.getElementById('result-screen').style.display = 'block';
+            document.getElementById('final-score').innerText = `${firstTryCorrect} / ${quizData.length}`;
+        }
+    }
+
+    function restartQuiz() {
+        currentQ = 0;
+        firstTryCorrect = 0;
+        document.getElementById('quiz-box').style.display = 'block';
+        document.getElementById('result-screen').style.display = 'none';
+        renderQuestion();
+    }
+
+    renderQuestion();
+</script>
+
+</body>
+</html>
