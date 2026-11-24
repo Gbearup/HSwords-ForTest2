@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高一上英文課本-第二次段考 考前速覽單字表（A-Z）</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            background: #f7fafc;
+            padding: 14px 16px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #e2e8f0;
+        }
+        .toolbar .search-input {
+            flex: 1;
+            min-width: 200px;
+            margin: 0;
+        }
+        .tool-btn {
+            padding: 9px 14px;
+            border: 2px solid #cbd5e0;
+            border-radius: 10px;
+            background: #ffffff;
+            color: #2d3748;
+            font-size: 0.92rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            white-space: nowrap;
+        }
+        .tool-btn:hover {
+            border-color: #4299e1;
+            background: #ebf8ff;
+        }
+        .tool-btn.active {
+            background: #4299e1;
+            border-color: #4299e1;
+            color: #ffffff;
+        }
+        .tool-btn.warn.active {
+            background: #ed8936;
+            border-color: #ed8936;
+            color: #ffffff;
+        }
+        .alpha-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+            margin-bottom: 16px;
+            padding: 8px;
+            background: #edf2f7;
+            border-radius: 10px;
+        }
+        .alpha-btn {
+            min-width: 30px;
+            padding: 5px 8px;
+            border: none;
+            border-radius: 6px;
+            background: #ffffff;
+            color: #2b6cb0;
+            font-weight: bold;
+            font-size: 0.88rem;
+            cursor: pointer;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+        }
+        .alpha-btn:hover {
+            background: #3182ce;
+            color: #ffffff;
+        }
+        .alpha-btn.disabled {
+            opacity: 0.35;
+            cursor: default;
+            pointer-events: none;
+        }
+        .stats-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.92rem;
+            color: #4a5568;
+            margin-bottom: 10px;
+            padding: 0 4px;
+        }
+        .quick-table-wrap {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            overflow-x: auto;
+            border: 1px solid #e2e8f0;
+        }
+        .quick-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .quick-table th {
+            background: #ebf8ff;
+            color: #2c5282;
+            padding: 12px 14px;
+            font-size: 0.95rem;
+            border-bottom: 2px solid #bee3f8;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        .quick-table td {
+            padding: 11px 14px;
+            border-bottom: 1px solid #edf2f7;
+            vertical-align: middle;
+            font-size: 1rem;
+        }
+        .quick-table tr:hover {
+            background: #f7fafc;
+        }
+        .quick-table tr.alpha-anchor td {
+            border-top: 2px solid #cbd5e0;
+        }
+        .col-check { width: 44px; text-align: center; }
+        .col-speak { width: 46px; text-align: center; }
+        .col-vocab { font-weight: bold; color: #1a202c; font-size: 1.08rem; }
+        .col-kk { color: #718096; font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif; font-size: 0.92rem; }
+        .col-pos { color: #3182ce; font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
+        .col-def { color: #2d3748; }
+
+        /* 遮罩背誦模式 */
+        .hide-en .col-vocab {
+            color: transparent;
+            background: #edf2f7;
+            border-radius: 6px;
+            user-select: none;
+            cursor: pointer;
+        }
+        .hide-en .col-vocab.revealed {
+            color: #1a202c;
+            background: transparent;
+        }
+        .hide-zh .col-def {
+            color: transparent;
+            background: #edf2f7;
+            border-radius: 6px;
+            user-select: none;
+            cursor: pointer;
+        }
+        .hide-zh .col-def.revealed {
+            color: #2d3748;
+            background: transparent;
+        }
+        .speak-mini-btn {
+            border: none;
+            background: #ebf8ff;
+            color: #2b6cb0;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .speak-mini-btn:hover {
+            background: #3182ce;
+            color: #ffffff;
+        }
+        .star-check {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #ed8936;
+        }
+        @media print {
+            .lesson-tabs, .toolbar, .alpha-bar, .col-speak { display: none !important; }
+            .container { max-width: 100%; padding: 0; }
+            .quick-table th, .quick-table td { padding: 6px 10px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 頂部導覽列（可一鍵切回測驗頁） -->
+        <div class="lesson-tabs">
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-TextBook-2.html'">⬅️ 返回單元與測驗</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-LiveABC_10_1.html'">📚 LiveABC單字</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-7000-2.html'">📚 核心單字</button>
+        </div>
+
+        <header>
+            <h1 id="page-title">
+                <img src="logo3.gif" alt="icon" style="width: 65px; height: 65px; border-radius: 50%; vertical-align: middle; margin-right: 8px;">
+                第二次段考 考前速覽單字表（L4–6 + Review2）
+            </h1>
+        </header>
+
+        <!-- 控制工具列 -->
+        <div class="toolbar">
+            <input type="text" id="quickSearch" class="search-input" placeholder="快速搜尋英文、音標或中文..." onkeyup="renderQuickList()">
+            <button type="button" id="sortModeBtn" class="tool-btn active" onclick="toggleSortMode()">🔤 A–Z 排序中</button>
+            <button type="button" id="hideZhBtn" class="tool-btn" onclick="toggleMask('zh')">🙈 遮住中文</button>
+            <button type="button" id="hideEnBtn" class="tool-btn" onclick="toggleMask('en')">🙈 遮住英文</button>
+            <button type="button" id="onlyStarBtn" class="tool-btn warn" onclick="toggleOnlyStar()">⭐ 只看不熟單字</button>
+            <button type="button" class="tool-btn" onclick="window.print()">🖨️ 列印單字表</button>
+        </div>
+
+        <!-- A-Z 快速跳轉列 -->
+        <div class="alpha-bar" id="alphaBar"></div>
+
+        <!-- 數量統計 -->
+        <div class="stats-bar">
+            <span id="wordCountLabel">載入中...</span>
+            <span>💡 遮罩模式下點擊格子可單獨偷看答案；勾選 ⭐ 可標記考前不熟單字</span>
+        </div>
+
+        <!-- 精簡無例句單字表格 -->
+        <div class="quick-table-wrap">
+            <table class="quick-table" id="quickTable">
+                <thead>
+                    <tr>
+                        <th class="col-check">不熟</th>
+                        <th class="col-speak">發音</th>
+                        <th>單字 / 片語</th>
+                        <th>KK 音標</th>
+                        <th>詞性</th>
+                        <th>中文解釋</th>
+                    </tr>
+                </thead>
+                <tbody id="quickTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 直接沿用原本的資料檔，完全不用改動 -->
+    <script src="WordsData/book1_test2.js"></script>
+
+    <script>
+        const STORAGE_KEY = 'book1_test2_unfamiliar_words';
+        let isSortedABC = true;
+        let hideZh = false;
+        let hideEn = false;
+        let onlyStar = false;
+
+        function getStarredSet() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                return new Set(raw ? JSON.parse(raw) : []);
+            } catch (e) {
+                return new Set();
+            }
+        }
+
+        function saveStarredSet(set) {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
+            } catch (e) {}
+        }
+
+        function toggleStar(vocab, checkbox) {
+            const set = getStarredSet();
+            if (checkbox.checked) {
+                set.add(vocab);
+            } else {
+                set.delete(vocab);
+            }
+            saveStarredSet(set);
+            if (onlyStar) {
+                renderQuickList();
+            } else {
+                updateStatsText(document.querySelectorAll('#quickTableBody tr[data-row="1"]').length, set.size);
+            }
+        }
+
+        // 取得並整理資料（自動合併重複的 disease，保留資料較完整的那筆）
+        function getRawWords() {
+            const source = typeof allData !== 'undefined' ? allData : [];
+            const seen = new Map();
+            source.forEach(item => {
+                const key = (item.vocab || '').trim().toLowerCase();
+                if (!seen.has(key)) {
+                    seen.set(key, item);
+                } else {
+                    const existing = seen.get(key);
+                    if ((item.extension || '').length > (existing.extension || '').length) {
+                        seen.set(key, item);
+                    }
+                }
+            });
+            return Array.from(seen.values());
+        }
+
+        function normalizeFirstLetter(vocab) {
+            const clean = (vocab || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+            return clean ? clean[0].toUpperCase() : '#';
+        }
+
+        function sortABC(list) {
+            return [...list].sort((a, b) => {
+                const na = (a.vocab || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                const nb = (b.vocab || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                return na.localeCompare(nb);
+            });
+        }
+
+        function speakWord(text) {
+            if (!('speechSynthesis' in window)) return;
+            window.speechSynthesis.cancel();
+            const utter = new SpeechSynthesisUtterance(text.replace(/\.\.\./g, ' '));
+            utter.lang = 'en-US';
+            utter.rate = 0.95;
+            window.speechSynthesis.speak(utter);
+        }
+
+        function toggleSortMode() {
+            isSortedABC = !isSortedABC;
+            const btn = document.getElementById('sortModeBtn');
+            btn.classList.toggle('active', isSortedABC);
+            btn.textContent = isSortedABC ? '🔤 A–Z 排序中' : '📖 原課本順序';
+            renderQuickList();
+        }
+
+        function toggleMask(type) {
+            const table = document.getElementById('quickTable');
+            if (type === 'zh') {
+                hideZh = !hideZh;
+                document.getElementById('hideZhBtn').classList.toggle('active', hideZh);
+                table.classList.toggle('hide-zh', hideZh);
+            } else {
+                hideEn = !hideEn;
+                document.getElementById('hideEnBtn').classList.toggle('active', hideEn);
+                table.classList.toggle('hide-en', hideEn);
+            }
+            document.querySelectorAll('.revealed').forEach(el => el.classList.remove('revealed'));
+        }
+
+        function toggleOnlyStar() {
+            onlyStar = !onlyStar;
+            document.getElementById('onlyStarBtn').classList.toggle('active', onlyStar);
+            renderQuickList();
+        }
+
+        function jumpToLetter(letter) {
+            if (!isSortedABC) {
+                toggleSortMode();
+            }
+            const target = document.getElementById(`letter-${letter}`);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function renderAlphaBar(availableLetters) {
+            const bar = document.getElementById('alphaBar');
+            const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+            bar.innerHTML = letters.map(ch => {
+                const hasWord = availableLetters.has(ch);
+                return `<button type="button" class="alpha-btn ${hasWord ? '' : 'disabled'}" onclick="jumpToLetter('${ch}')">${ch}</button>`;
+            }).join('');
+        }
+
+        function updateStatsText(count, starCount) {
+            document.getElementById('wordCountLabel').textContent = `共顯示 ${count} 個單字 / 片語（已標記不熟：${starCount} 個）`;
+        }
+
+        function renderQuickList() {
+            const keyword = (document.getElementById('quickSearch').value || '').trim().toLowerCase();
+            const starredSet = getStarredSet();
+            let list = getRawWords();
+
+            if (isSortedABC) {
+                list = sortABC(list);
+            }
+
+            if (onlyStar) {
+                list = list.filter(item => starredSet.has(item.vocab));
+            }
+
+            if (keyword) {
+                list = list.filter(item =>
+                    (item.vocab || '').toLowerCase().includes(keyword) ||
+                    (item.kk || '').toLowerCase().includes(keyword) ||
+                    (item.pos || '').toLowerCase().includes(keyword) ||
+                    (item.definition || '').toLowerCase().includes(keyword)
+                );
+            }
+
+            const availableLetters = new Set();
+            list.forEach(item => availableLetters.add(normalizeFirstLetter(item.vocab)));
+            renderAlphaBar(availableLetters);
+
+            const tbody = document.getElementById('quickTableBody');
+            let lastLetter = '';
+
+            if (list.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding: 30px; color: #718096;">沒有符合條件的單字</td></tr>`;
+                updateStatsText(0, starredSet.size);
+                return;
+            }
+
+            tbody.innerHTML = list.map(item => {
+                const letter = normalizeFirstLetter(item.vocab);
+                let anchorAttr = '';
+                let rowClass = '';
+                if (isSortedABC && letter !== lastLetter) {
+                    anchorAttr = `id="letter-${letter}"`;
+                    rowClass = 'alpha-anchor';
+                    lastLetter = letter;
+                }
+
+                const isStarred = starredSet.has(item.vocab);
+                const safeVocabAttr = (item.vocab || '').replace(/'/g, "\\'");
+
+                return `
+                    <tr data-row="1" ${anchorAttr} class="${rowClass}">
+                        <td class="col-check">
+                            <input type="checkbox" class="star-check" ${isStarred ? 'checked' : ''} onchange="toggleStar('${safeVocabAttr}', this)" title="標記為不熟單字">
+                        </td>
+                        <td class="col-speak">
+                            <button type="button" class="speak-mini-btn" onclick="speakWord('${safeVocabAttr}')" title="聆聽發音">🔊</button>
+                        </td>
+                        <td class="col-vocab" onclick="this.classList.toggle('revealed')">${item.vocab || ''}</td>
+                        <td class="col-kk">${item.kk || ''}</td>
+                        <td class="col-pos">${item.pos || ''}</td>
+                        <td class="col-def" onclick="this.classList.toggle('revealed')">${item.definition || ''}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            updateStatsText(list.length, starredSet.size);
+        }
+
+        window.onload = renderQuickList;
+    </script>
+</body>
+</html>

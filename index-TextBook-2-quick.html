@@ -127,7 +127,6 @@
         .col-check { width: 44px; text-align: center; }
         .col-speak { width: 46px; text-align: center; }
         .col-vocab { font-weight: bold; color: #1a202c; font-size: 1.08rem; }
-        .col-kk { color: #718096; font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif; font-size: 0.92rem; }
         .col-pos { color: #3182ce; font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
         .col-def { color: #2d3748; }
 
@@ -199,7 +198,7 @@
 
         <!-- 控制工具列 -->
         <div class="toolbar">
-            <input type="text" id="quickSearch" class="search-input" placeholder="快速搜尋英文、音標或中文..." onkeyup="renderQuickList()">
+            <input type="text" id="quickSearch" class="search-input" placeholder="快速搜尋英文或中文..." onkeyup="renderQuickList()">
             <button type="button" id="sortModeBtn" class="tool-btn active" onclick="toggleSortMode()">🔤 A–Z 排序中</button>
             <button type="button" id="hideZhBtn" class="tool-btn" onclick="toggleMask('zh')">🙈 遮住中文</button>
             <button type="button" id="hideEnBtn" class="tool-btn" onclick="toggleMask('en')">🙈 遮住英文</button>
@@ -224,9 +223,8 @@
                         <th class="col-check">不熟</th>
                         <th class="col-speak">發音</th>
                         <th>單字 / 片語</th>
-                        <!-- <th>KK 音標</th>
-                        <th>詞性</th> -->
                         <th>中文解釋</th>
+                        <th>詞性</th>
                     </tr>
                 </thead>
                 <tbody id="quickTableBody"></tbody>
@@ -381,7 +379,6 @@
             if (keyword) {
                 list = list.filter(item =>
                     (item.vocab || '').toLowerCase().includes(keyword) ||
-                    (item.kk || '').toLowerCase().includes(keyword) ||
                     (item.pos || '').toLowerCase().includes(keyword) ||
                     (item.definition || '').toLowerCase().includes(keyword)
                 );
@@ -395,7 +392,7 @@
             let lastLetter = '';
 
             if (list.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding: 30px; color: #718096;">沒有符合條件的單字</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding: 30px; color: #718096;">沒有符合條件的單字</td></tr>`;
                 updateStatsText(0, starredSet.size);
                 return;
             }
@@ -422,9 +419,8 @@
                             <button type="button" class="speak-mini-btn" onclick="speakWord('${safeVocabAttr}')" title="聆聽發音">🔊</button>
                         </td>
                         <td class="col-vocab" onclick="this.classList.toggle('revealed')">${item.vocab || ''}</td>
-                        <td class="col-kk">${item.kk || ''}</td>
-                        <td class="col-pos">${item.pos || ''}</td>
                         <td class="col-def" onclick="this.classList.toggle('revealed')">${item.definition || ''}</td>
+                        <td class="col-pos">${item.pos || ''}</td>
                     </tr>
                 `;
             }).join('');
